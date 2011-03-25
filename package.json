@@ -1,0 +1,7 @@
+{ "name": "HTTP Status Code"
+, "version": "0.0.1"
+, "description": "Interact with HTTP status code"
+, "author": "David Worms <david@adaltas.com>"
+, "main": "./index"
+, "engines": { "node": ">= 0.1.90" }
+}
