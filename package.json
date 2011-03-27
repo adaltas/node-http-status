@@ -1,4 +1,4 @@
-{ "name": "HTTP Status Code"
+{ "name": "http-status"
 , "version": "0.0.1"
 , "description": "Interact with HTTP status code"
 , "author": "David Worms <david@adaltas.com>"
