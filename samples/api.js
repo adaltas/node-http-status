@@ -1,8 +1,7 @@
-
-var HttpStatus = require('../index');
+var HTTPStatus = require('http-status');
 
 // Print "Internal Server Error"
-console.log( HttpStatus['500'] );
+console.log(HTTPStatus[500]);
 
-// Print "500"
-console.log( HttpStatus.InternalServerError );
+// Print 500
+console.log(HTTPStatus.INTERNAL_SERVER_ERROR);
