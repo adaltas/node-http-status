@@ -33,3 +33,9 @@ Utility to interact with HTTP status code.
     });
 
     app.listen(3000);
+
+Contributors
+------------
+
+*	David Worms : <https://github.com/wdavidw>
+*	Daniel Gasienica : <https://github.com/gasi>
