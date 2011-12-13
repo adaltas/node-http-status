@@ -1,4 +1,4 @@
-# HTTP Status
+# HTTP Status code for Node
 
 Utility to interact with HTTP status code.
 
@@ -6,6 +6,7 @@ Utility to interact with HTTP status code.
 
 ### API sample
 
+```javascript
     var HTTPStatus = require('http-status');
 
     // Print "Internal Server Error"
@@ -13,9 +14,11 @@ Utility to interact with HTTP status code.
 
     // Print 500
     console.log(HTTPStatus.INTERNAL_SERVER_ERROR);
+```
 
 ### Express sample
 
+```javascript
     var express = require('express'),
         redis = require('redis'),
         HTTPStatus = require('http-status');
@@ -33,6 +36,7 @@ Utility to interact with HTTP status code.
     });
 
     app.listen(3000);
+```
 
 Contributors
 ------------
