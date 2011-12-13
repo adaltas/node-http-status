@@ -1,5 +1,5 @@
 { "name": "http-status"
-, "version": "0.1.0"
+, "version": "0.1.1"
 , "description": "Interact with HTTP status code"
 , "author": "David Worms <david@adaltas.com>"
 , "contributors": [{"name": "Daniel Gasienica", "email": "daniel@gasienica.ch"}]
