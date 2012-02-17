@@ -1,9 +1,30 @@
-{ "name": "http-status"
-, "version": "0.1.1"
-, "description": "Interact with HTTP status code"
-, "author": "David Worms <david@adaltas.com>"
-, "contributors": [{"name": "Daniel Gasienica", "email": "daniel@gasienica.ch"}]
-, "devDependencies": { "coffee-script": "1.x" }
-, "main": "./lib/index"
-, "engines": { "node": ">= 0.1.90" }
+{
+    "name": "http-status",
+    "description": "Interact with HTTP status code",
+    "keywords": ["http", "express", "connect"],
+    "version": "0.1.1",
+    "homepage": "http://www.adaltas.com/projects/node-http-status.html",
+    "author": "David Worms <david@adaltas.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wdavidw/node-http-status"
+    },
+    "bugs": {
+        "email": "open@adaltas.com",
+        "url": "http://github.com/wdavidw/node-http-status/issues"
+    },
+    "devDependencies": {
+        "coffee-script": "latest",
+        "mocha": "latest",
+        "should": "latest"
+    },
+    "contributors": [ 
+        { "name": "David Worms", "email": "david@adaltas.com" },
+        { "name": "Daniel Gasienica", "email": "daniel@gasienica.ch"}
+    ],
+    "main": "./lib",
+    "engines": { "node": ">= 0.4.0" },
+    "scripts": {
+        "test": "mocha"
+    }
 }
