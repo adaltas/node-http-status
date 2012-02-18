@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/wdavidw/node-http-status.png)](http://travis-ci.org/wdavidw/node-http-status)
+
 # HTTP Status code for Node
 
 Utility to interact with HTTP status code.
