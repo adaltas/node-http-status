@@ -9,35 +9,35 @@ Utility to interact with HTTP status code.
 ### API sample
 
 ```javascript
-    var HTTPStatus = require('http-status');
+  var HTTPStatus = require('http-status');
 
-    // Print "Internal Server Error"
-    console.log(HTTPStatus[500]);
+  // Print "Internal Server Error"
+  console.log(HTTPStatus[500]);
 
-    // Print 500
-    console.log(HTTPStatus.INTERNAL_SERVER_ERROR);
+  // Print 500
+  console.log(HTTPStatus.INTERNAL_SERVER_ERROR);
 ```
 
 ### Express sample
 
 ```javascript
-    var express = require('express'),
-        redis = require('redis'),
-        HTTPStatus = require('http-status');
+  var express = require('express'),
+    redis = require('redis'),
+    HTTPStatus = require('http-status');
 
-    var app = express.createServer();
+  var app = express.createServer();
 
-    app.get('/', function (req, res) {
-        var client = redis.createClient();
-        client.ping(function (err, msg) {
-            if (err) {
-                return res.send(HTTPStatus.INTERNAL_SERVER_ERROR);
-            }
-            res.send(msg, HTTPStatus.OK);
-        });
+  app.get('/', function (req, res) {
+    var client = redis.createClient();
+    client.ping(function (err, msg) {
+      if (err) {
+        return res.send(HTTPStatus.INTERNAL_SERVER_ERROR);
+      }
+      res.send(msg, HTTPStatus.OK);
     });
+  });
 
-    app.listen(3000);
+  app.listen(3000);
 ```
 
 Contributors
