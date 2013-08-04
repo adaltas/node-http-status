@@ -6,6 +6,12 @@ Utility to interact with HTTP status code.
 
 ## Usage
 
+Once you require this module, you may call it with either an HTTP code or a message name. With an HTTP code, you will get the message name while with a message name you will get an HTTP code. Simple.
+
+## API
+
+This module is very simple. A documentation would be more complicate than reading the [original code](./src/index.js).
+
 ### API sample
 
 ```javascript
