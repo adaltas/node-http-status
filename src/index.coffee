@@ -75,7 +75,7 @@ module.exports =
 
   # Redirection 3xx
   # Further action must be taken in order to complete the request
-  MULTITPLE_CHOICES: 300
+  MULTIPLE_CHOICES: 300
   MOVED_PERMANENTLY: 301
   FOUND: 302
   SEE_OTHER: 303
