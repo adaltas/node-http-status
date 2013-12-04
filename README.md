@@ -10,7 +10,7 @@ Once you require this module, you may call it with either an HTTP code or a mess
 
 ## API
 
-This module is very simple. A documentation would be more complicate than reading the [original code](./src/index.js).
+This module is very simple. A documentation would be more complicate than reading the [original code](./src/index.coffee).
 
 ### API sample
 
