@@ -10,7 +10,7 @@ Once you require this module, you may call it with either an HTTP code or a mess
 
 ## API
 
-This module is very simple. A documentation would be more complicate than reading the [original code](./lib/index.js).
+This module is very simple. A documentation would be more complicate than reading the [original code](./src/index.litcoffee).
 
 ### API sample
 
@@ -49,5 +49,7 @@ This module is very simple. A documentation would be more complicate than readin
 Contributors
 ------------
 
-*	David Worms : <https://github.com/wdavidw>
-*	Daniel Gasienica : <https://github.com/gasi>
+*	  David Worms : <https://github.com/wdavidw>
+*	  Daniel Gasienica : <https://github.com/gasi>
+*   Rodrigo : <rfsbraz@gmail.com>
+*   Paul Vollmer : <paul.vollmer@fh-potsdam.de>
