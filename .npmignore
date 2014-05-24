@@ -2,5 +2,4 @@ samples/
 test/
 src/
 .git*
-*.log
 .travis.yml
