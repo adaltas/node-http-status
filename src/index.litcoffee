@@ -55,6 +55,7 @@ The request contains bad syntax or cannot be fulfilled
     415: 'Unsupported Media Type'
     416: 'Requested Range not Satisfiable'
     417: 'Expectation Failed'
+    422: 'Unprocessable Entity'
     429: 'Too Many Requests'
 
 ## Server Error 5xx
@@ -117,6 +118,7 @@ The request contains bad syntax or cannot be fulfilled
     UNSUPPORTED_MEDIA_TYPE: 415
     REQUESTED_RANGE_NOT_SATISFIABLE: 416
     EXPECTATION_FAILED: 417
+    UNPROCESSABLE_ENTITY: 422
     TOO_MANY_REQUESTS: 429
 
 ## Server Error 5xx
