@@ -5,6 +5,7 @@
   "homepage": "http://www.adaltas.com/projects/node-http-status",
   "author": "David Worms <david@adaltas.com>",
   "keywords": ["http", "express", "connect"],
+  "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
     "url": "https://github.com/wdavidw/node-http-status"
