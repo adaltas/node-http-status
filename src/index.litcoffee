@@ -57,6 +57,7 @@ The request contains bad syntax or cannot be fulfilled
     417: 'Expectation Failed'
     422: 'Unprocessable Entity'
     429: 'Too Many Requests'
+    451: 'Unavailable For Legal Reasons'
 
 ## Server Error 5xx
 The server failed to fulfill an apparently valid request
@@ -120,6 +121,7 @@ The request contains bad syntax or cannot be fulfilled
     EXPECTATION_FAILED: 417
     UNPROCESSABLE_ENTITY: 422
     TOO_MANY_REQUESTS: 429
+    UNAVAILABLE_FOR_LEGAL_REASONS: 451
 
 ## Server Error 5xx
 The server failed to fulfill an apparently valid request
