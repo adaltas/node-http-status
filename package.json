@@ -26,6 +26,7 @@
   "main": "./lib",
   "engines": { "node": ">= 0.4.0" },
   "scripts": {
+    "coffee": "./node_modules/.bin/coffee -b -o lib src",
     "test": "mocha"
   }
 }
