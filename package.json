@@ -1,6 +1,6 @@
 {
   "name": "http-status",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Interact with HTTP status code",
   "homepage": "http://www.adaltas.com/projects/node-http-status",
   "author": "David Worms <david@adaltas.com>",
