@@ -56,6 +56,7 @@ The request contains bad syntax or cannot be fulfilled
     416: 'Requested Range not Satisfiable'
     417: 'Expectation Failed'
     422: 'Unprocessable Entity'
+    423: 'Locked'
     424: 'Failed Dependency'
     429: 'Too Many Requests'
     451: 'Unavailable For Legal Reasons'
@@ -122,6 +123,7 @@ The request contains bad syntax or cannot be fulfilled
     REQUESTED_RANGE_NOT_SATISFIABLE: 416
     EXPECTATION_FAILED: 417
     UNPROCESSABLE_ENTITY: 422
+    LOCKED: 423
     FAILED_DEPENDENCY: 424
     TOO_MANY_REQUESTS: 429
     UNAVAILABLE_FOR_LEGAL_REASONS: 451
