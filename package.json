@@ -23,7 +23,7 @@
     { "name": "David Worms", "email": "david@adaltas.com" },
     { "name": "Daniel Gasienica", "email": "daniel@gasienica.ch"}
   ],
-  "main": "./lib",
+  "main": "lib/index.js",
   "engines": { "node": ">= 0.4.0" },
   "scripts": {
     "coffee": "./node_modules/.bin/coffee -b -o lib src",
