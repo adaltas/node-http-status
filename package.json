@@ -26,7 +26,7 @@
   "main": "lib/index.js",
   "engines": { "node": ">= 0.4.0" },
   "scripts": {
-    "coffee": "./node_modules/.bin/coffee -b -o lib src",
-    "test": "mocha"
+    "coffee": "node_modules/.bin/coffee -b -o lib src",
+    "test": "NODE_ENV=test node_modules/.bin/mocha --compilers coffee:coffee-script/register --reporter dot"
   }
 }
