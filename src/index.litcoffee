@@ -55,6 +55,7 @@ The request contains bad syntax or cannot be fulfilled
     415: 'Unsupported Media Type'
     416: 'Requested Range not Satisfiable'
     417: 'Expectation Failed'
+    418: 'I\'m a teapot'
     422: 'Unprocessable Entity'
     423: 'Locked'
     424: 'Failed Dependency'
@@ -122,6 +123,7 @@ The request contains bad syntax or cannot be fulfilled
     UNSUPPORTED_MEDIA_TYPE: 415
     REQUESTED_RANGE_NOT_SATISFIABLE: 416
     EXPECTATION_FAILED: 417
+    IM_A_TEAPOT: 418
     UNPROCESSABLE_ENTITY: 422
     LOCKED: 423
     FAILED_DEPENDENCY: 424
