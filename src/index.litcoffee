@@ -55,6 +55,11 @@ The request contains bad syntax or cannot be fulfilled
     415: 'Unsupported Media Type'
     416: 'Requested Range not Satisfiable'
     417: 'Expectation Failed'
+
+Any attempt to brew coffee with a teapot should result in the error
+code "418 I'm a teapot". The resulting entity body MAY be short and
+stout.
+
     418: 'I\'m a teapot'
     422: 'Unprocessable Entity'
     423: 'Locked'
