@@ -77,7 +77,7 @@ The server failed to fulfill an apparently valid request
     503: 'Service Unavailable'
     504: 'Gateway Time-out'
     505: 'HTTP Version not Supported'
-    507: 'Insufficient Storage',
+    507: 'Insufficient Storage'
 
 ## Informational 1xx
 Request received, continuing process
@@ -95,6 +95,7 @@ The action was successfully received, understood, and accepted
     NO_CONTENT: 204
     RESET_CONTENT: 205
     PARTIAL_CONTENT: 206
+    MULTI_STATUS: 207
 
 ## Redirection 3xx
 Further action must be taken in order to complete the request
