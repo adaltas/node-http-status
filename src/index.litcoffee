@@ -89,6 +89,7 @@ The server failed to fulfill an apparently valid request
     507: 'Insufficient Storage'
     508: 'Loop Detected' # WebDAV; RFC 5842
     510: 'Not Extended' # RFC 2774
+    511: 'Network Authentication Required' # RFC 6585
 
 ## Informational 1xx
 Request received, continuing process
@@ -168,3 +169,4 @@ The server failed to fulfill an apparently valid request
     INSUFFICIENT_STORAGE: 507
     LOOP_DETECTED: 508
     NOT_EXTENDED: 510
+    NETWORK_AUTHENTICATION_REQUIRED: 511
