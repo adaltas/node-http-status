@@ -23,6 +23,7 @@ The action was successfully received, understood, and accepted
     205: 'Reset Content'
     206: 'Partial Content'
     207: 'Multi Status' # WebDAV; RFC 4918
+    208: 'Already Reported' # WebDAV; RFC 5842
 
 ## Redirection 3xx
 Further action must be taken in order to complete the request
@@ -96,6 +97,7 @@ The action was successfully received, understood, and accepted
     RESET_CONTENT: 205
     PARTIAL_CONTENT: 206
     MULTI_STATUS: 207
+    ALREADY_REPORTED: 208
 
 ## Redirection 3xx
 Further action must be taken in order to complete the request
