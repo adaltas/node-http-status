@@ -85,6 +85,7 @@ The server failed to fulfill an apparently valid request
     503: 'Service Unavailable'
     504: 'Gateway Time-out'
     505: 'HTTP Version not Supported'
+    506: 'Variant Also Negotiates' # RFC 2295
     507: 'Insufficient Storage'
 
 ## Informational 1xx
@@ -161,4 +162,5 @@ The server failed to fulfill an apparently valid request
     SERVICE_UNAVAILABLE: 503
     GATEWAY_TIMEOUT: 504
     HTTP_VERSION_NOT_SUPPORTED: 505
+    VARIANT_ALSO_NEGOTIATES: 506
     INSUFFICIENT_STORAGE: 507
