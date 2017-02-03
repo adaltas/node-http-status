@@ -35,6 +35,7 @@ Further action must be taken in order to complete the request
     303: 'See Other'
     304: 'Not Modified'
     305: 'Use Proxy' # since HTTP/1.1
+    306: 'Switch Proxy'
     307: 'Temporary Redirect' # since HTTP/1.1
 
 ## Client Error 4xx
@@ -110,7 +111,7 @@ Further action must be taken in order to complete the request
     SEE_OTHER: 303
     NOT_MODIFIED: 304
     USE_PROXY: 305
-    # Unused: 306 (reserved)
+    SWITCH_PROXY: 306
     TEMPORARY_REDIRECT: 307
 
 ## Client Error 4xx
