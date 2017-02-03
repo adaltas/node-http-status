@@ -22,6 +22,7 @@ The action was successfully received, understood, and accepted
     204: 'No Content'
     205: 'Reset Content'
     206: 'Partial Content'
+    207: 'Multi Status'
 
 ## Redirection 3xx
 Further action must be taken in order to complete the request
