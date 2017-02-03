@@ -24,6 +24,7 @@ The action was successfully received, understood, and accepted
     206: 'Partial Content'
     207: 'Multi Status' # WebDAV; RFC 4918
     208: 'Already Reported' # WebDAV; RFC 5842
+    226: 'IM Used' # RFC 3229
 
 ## Redirection 3xx
 Further action must be taken in order to complete the request
@@ -98,6 +99,7 @@ The action was successfully received, understood, and accepted
     PARTIAL_CONTENT: 206
     MULTI_STATUS: 207
     ALREADY_REPORTED: 208
+    IM_USED: 226
 
 ## Redirection 3xx
 Further action must be taken in order to complete the request
