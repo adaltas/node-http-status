@@ -37,6 +37,7 @@ Further action must be taken in order to complete the request
     305: 'Use Proxy' # since HTTP/1.1
     306: 'Switch Proxy'
     307: 'Temporary Redirect' # since HTTP/1.1
+    308: 'Permanent Redirect' # RFC 7538
 
 ## Client Error 4xx
 The request contains bad syntax or cannot be fulfilled
@@ -113,6 +114,7 @@ Further action must be taken in order to complete the request
     USE_PROXY: 305
     SWITCH_PROXY: 306
     TEMPORARY_REDIRECT: 307
+    PERMANENT_REDIRECT: 308
 
 ## Client Error 4xx
 The request contains bad syntax or cannot be fulfilled
