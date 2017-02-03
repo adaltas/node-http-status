@@ -66,6 +66,7 @@ code "418 I'm a teapot". The resulting entity body MAY be short and
 stout.
 
     418: 'I\'m a teapot' # RFC 2324
+    421: 'Misdirected Request'
     422: 'Unprocessable Entity'
     423: 'Locked'
     424: 'Failed Dependency'
@@ -138,6 +139,7 @@ The request contains bad syntax or cannot be fulfilled
     REQUESTED_RANGE_NOT_SATISFIABLE: 416
     EXPECTATION_FAILED: 417
     IM_A_TEAPOT: 418
+    MISDIRECTED_REQUEST: 421
     UNPROCESSABLE_ENTITY: 422
     LOCKED: 423
     FAILED_DEPENDENCY: 424
