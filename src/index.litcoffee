@@ -70,6 +70,7 @@ stout.
     422: 'Unprocessable Entity'
     423: 'Locked'
     424: 'Failed Dependency'
+    426: 'Upgrade Required'
     429: 'Too Many Requests'
     451: 'Unavailable For Legal Reasons'
 
@@ -141,6 +142,7 @@ The request contains bad syntax or cannot be fulfilled
     IM_A_TEAPOT: 418
     MISDIRECTED_REQUEST: 421
     UNPROCESSABLE_ENTITY: 422
+    UPGRADE_REQUIRED: 426
     LOCKED: 423
     FAILED_DEPENDENCY: 424
     TOO_MANY_REQUESTS: 429
