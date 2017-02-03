@@ -22,7 +22,7 @@ The action was successfully received, understood, and accepted
     204: 'No Content'
     205: 'Reset Content'
     206: 'Partial Content'
-    207: 'Multi Status'
+    207: 'Multi Status' # WebDAV; RFC 4918
 
 ## Redirection 3xx
 Further action must be taken in order to complete the request
@@ -32,8 +32,8 @@ Further action must be taken in order to complete the request
     302: 'Found'
     303: 'See Other'
     304: 'Not Modified'
-    305: 'Use Proxy'
-    307: 'Temporary Redirect'
+    305: 'Use Proxy' # since HTTP/1.1
+    307: 'Temporary Redirect' # since HTTP/1.1
 
 ## Client Error 4xx
 The request contains bad syntax or cannot be fulfilled
@@ -61,7 +61,7 @@ Any attempt to brew coffee with a teapot should result in the error
 code "418 I'm a teapot". The resulting entity body MAY be short and
 stout.
 
-    418: 'I\'m a teapot'
+    418: 'I\'m a teapot' # RFC 2324
     422: 'Unprocessable Entity'
     423: 'Locked'
     424: 'Failed Dependency'
