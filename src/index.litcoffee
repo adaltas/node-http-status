@@ -73,6 +73,7 @@ stout.
     426: 'Upgrade Required'
     428: 'Precondition Required' # RFC 6585
     429: 'Too Many Requests'
+    431: 'Request Header Fields Too Large' # RFC 6585
     451: 'Unavailable For Legal Reasons'
 
 ## Server Error 5xx
@@ -148,6 +149,7 @@ The request contains bad syntax or cannot be fulfilled
     LOCKED: 423
     FAILED_DEPENDENCY: 424
     TOO_MANY_REQUESTS: 429
+    REQUEST_HEADER_FIELDS_TOO_LARGE: 431
     UNAVAILABLE_FOR_LEGAL_REASONS: 451
 
 ## Server Error 5xx
