@@ -87,6 +87,7 @@ The server failed to fulfill an apparently valid request
     505: 'HTTP Version not Supported'
     506: 'Variant Also Negotiates' # RFC 2295
     507: 'Insufficient Storage'
+    508: 'Loop Detected' # WebDAV; RFC 5842
 
 ## Informational 1xx
 Request received, continuing process
@@ -164,3 +165,4 @@ The server failed to fulfill an apparently valid request
     HTTP_VERSION_NOT_SUPPORTED: 505
     VARIANT_ALSO_NEGOTIATES: 506
     INSUFFICIENT_STORAGE: 507
+    LOOP_DETECTED: 508
