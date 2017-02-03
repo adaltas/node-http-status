@@ -88,6 +88,7 @@ The server failed to fulfill an apparently valid request
     506: 'Variant Also Negotiates' # RFC 2295
     507: 'Insufficient Storage'
     508: 'Loop Detected' # WebDAV; RFC 5842
+    510: 'Not Extended' # RFC 2774
 
 ## Informational 1xx
 Request received, continuing process
@@ -166,3 +167,4 @@ The server failed to fulfill an apparently valid request
     VARIANT_ALSO_NEGOTIATES: 506
     INSUFFICIENT_STORAGE: 507
     LOOP_DETECTED: 508
+    NOT_EXTENDED: 510
