@@ -34,6 +34,7 @@
     }
   ],
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "engines": {
     "node": ">= 0.4.0"
   },
@@ -44,7 +45,7 @@
     "patch": "npm version patch -m 'Bump to version %s'",
     "minor": "npm version minor -m 'Bump to version %s'",
     "major": "npm version major -m 'Bump to version %s'",
-    "coffee": "coffee -b -o lib src",
+    "coffee": "coffee -b -o lib src && coffee src/build-typescript.coffee",
     "pretest": "coffee -b -o lib src",
     "test": "mocha test/**/*.coffee"
   }
