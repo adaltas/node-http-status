@@ -46,10 +46,9 @@ This module is very simple. A documentation would be more complicate than readin
   app.listen(3000);
 ```
 
-Contributors
-------------
+## Contributors
 
-*	  David Worms: <https://github.com/wdavidw>
-*	  Daniel Gasienica: <https://github.com/gasi>
-*   Rodrigo: <rfsbraz@gmail.com>
-*   Paul Vollmer: <paul.vollmer@fh-potsdam.de>
+- David Worms: <https://github.com/wdavidw>
+- Daniel Gasienica: <https://github.com/gasi>
+- Rodrigo: <rfsbraz@gmail.com>
+- Paul Vollmer: <paul.vollmer@fh-potsdam.de>
