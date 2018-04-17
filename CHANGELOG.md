@@ -1,5 +1,9 @@
 # Changelog: HTTP Status
 
+## Trunk
+
+* readme: add author company
+
 ## Version 0.1.1 – Nov 13, 2012
 
 -   Module as a better citizen

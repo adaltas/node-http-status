@@ -52,3 +52,5 @@ This module is very simple. A documentation would be more complicate than readin
 - Daniel Gasienica: <https://github.com/gasi>
 - Rodrigo: <rfsbraz@gmail.com>
 - Paul Vollmer: <paul.vollmer@fh-potsdam.de>
+
+This package is developed by [Adaltas](http://www.adaltas.com).
