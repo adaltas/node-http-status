@@ -2,6 +2,7 @@
 
 ## Trunk
 
+* package: publishing process
 * package: ignore lock files
 * src: new code and message properties
 * package: latest dependencies
