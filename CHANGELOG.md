@@ -2,6 +2,7 @@
 
 ## Trunk
 
+* src: new code and message properties
 * package: latest dependencies
 * readme: add author company
 
