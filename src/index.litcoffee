@@ -116,11 +116,11 @@ Further action must be taken in order to complete the request.
     '301_MESSAGE': 'This and all future requests should be directed to the given URI.'
     MOVED_PERMANENTLY: 301
 
-302 - This is an example of industry practice contradicting the standard. The HTTP/1.0 specification (RFC 1945) required the client to perform a temporary redirect (the original describing phrase was "Moved Temporarily"),[22] but popular browsers implemented 302 with the functionality of a 303 See Other. Therefore, HTTP/1.1 added status codes 303 and 307 to distinguish between the two behaviours.
+302 - This is an example of industry practice contradicting the standard. The HTTP/1.0 specification (RFC 1945) required the client to perform a temporary redirect (the original describing phrase was "Moved Temporarily"), but popular browsers implemented 302 with the functionality of a 303 See Other. Therefore, HTTP/1.1 added status codes 303 and 307 to distinguish between the two behaviours.
 
     302: 'Found'
     '302_NAME': 'FOUND'
-    '302_MESSAGE': 'This is an example of industry practice contradicting the standard. The HTTP/1.0 specification (RFC 1945) required the client to perform a temporary redirect (the original describing phrase was "Moved Temporarily"),[22] but popular browsers implemented 302 with the functionality of a 303 See Other. Therefore, HTTP/1.1 added status codes 303 and 307 to distinguish between the two behaviours.'
+    '302_MESSAGE': 'This is an example of industry practice contradicting the standard. The HTTP/1.0 specification (RFC 1945) required the client to perform a temporary redirect (the original describing phrase was "Moved Temporarily"), but popular browsers implemented 302 with the functionality of a 303 See Other. Therefore, HTTP/1.1 added status codes 303 and 307 to distinguish between the two behaviours.'
     FOUND: 302
 
 303 (since HTTP/1.1) - The response to the request can be found under another URI using the GET method.
@@ -183,11 +183,11 @@ The request contains bad syntax or cannot be fulfilled.
     '401_MESSAGE': 'Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided.'
     UNAUTHORIZED: 401
 
-402 - Reserved for future use. The original intention was that this code might be used as part of some form of digital cash or micropayment scheme, as proposed for example by GNU Taler[36], but that has not yet happened, and this code is not usually used.
+402 - Reserved for future use. The original intention was that this code might be used as part of some form of digital cash or micropayment scheme, as proposed for example by GNU Taler, but that has not yet happened, and this code is not usually used.
 
     402: 'Payment Required'
     '402_NAME': 'PAYMENT_REQUIRED'
-    '402_MESSAGE': 'Reserved for future use. The original intention was that this code might be used as part of some form of digital cash or micropayment scheme, as proposed for example by GNU Taler[36], but that has not yet happened, and this code is not usually used.'
+    '402_MESSAGE': 'Reserved for future use. The original intention was that this code might be used as part of some form of digital cash or micropayment scheme, as proposed for example by GNU Taler, but that has not yet happened, and this code is not usually used.'
     PAYMENT_REQUIRED: 402
 
 403 - The request was valid, but the server is refusing action.
@@ -295,7 +295,7 @@ The request contains bad syntax or cannot be fulfilled.
     '417_MESSAGE': 'The server cannot meet the requirements of the Expect request-header field.'
     EXPECTATION_FAILED: 417
 
-418 (RFC 2324, RFC 7168) - Any attempt to brew coffee with a teapot should result in the error code "418 I'm a teapot". The resulting entity body MAY be short and stout. This code was defined in 1998 as one of the traditional IETF April Fools' jokes, in RFC 2324, Hyper Text Coffee Pot Control Protocol, and is not expected to be implemented by actual HTTP servers. The RFC specifies this code should be returned by teapots requested to brew coffee.[50] This HTTP status is used as an Easter egg in some websites, including Google.com.
+418 (RFC 2324, RFC 7168) - Any attempt to brew coffee with a teapot should result in the error code "418 I'm a teapot". The resulting entity body MAY be short and stout. This code was defined in 1998 as one of the traditional IETF April Fools' jokes, in RFC 2324, Hyper Text Coffee Pot Control Protocol, and is not expected to be implemented by actual HTTP servers. The RFC specifies this code should be returned by teapots requested to brew coffee. This HTTP status is used as an Easter egg in some websites, including Google.com.
 
     418: 'I\'m a teapot'
     '418_NAME': 'IM_A_TEAPOT'
@@ -445,3 +445,215 @@ The server failed to fulfill an apparently valid request.
     '511_NAME': 'NETWORK_AUTHENTICATION_REQUIRED'
     '511_MESSAGE': 'The client needs to authenticate to gain network access. Intended for use by intercepting proxies used to control access to the network.'
     NETWORK_AUTHENTICATION_REQUIRED: 511
+
+## Extra code
+
+Extra HTTP code implemented by vendors and other specifications.
+
+    extra:
+
+### Unofficial codes
+
+The following codes are not specified by any standard.
+
+      unofficial:
+
+103 - Used in the resumable requests proposal to resume aborted PUT or POST requests.
+
+        103: 'Checkpoint'
+        '103_NAME': 'CHECKPOINT'
+        '103_MESSAGE': 'Used in the resumable requests proposal to resume aborted PUT or POST requests.'
+        CHECKPOINT: 103
+
+420 (Spring Framework) - A deprecated response used by the Spring Framework when a method has failed.
+
+        420: 'Method Failure'
+        '420_NAME': 'METHOD_FAILURE'
+        '420_MESSAGE': 'A deprecated response used by the Spring Framework when a method has failed.'
+        METHOD_FAILURE: 420
+
+420 (Twitter) - Returned by version 1 of the Twitter Search and Trends API when the client is being rate limited; versions 1.1 and later use the 429 Too Many Requests response code instead.
+
+        420: 'Enhance Your Calm'
+        '420_NAME': 'ENHANCE_YOUR_CALM'
+        '420_MESSAGE': 'Returned by version 1 of the Twitter Search and Trends API when the client is being rate limited; versions 1.1 and later use the 429 Too Many Requests response code instead.'
+        ENHANCE_YOUR_CALM: 420
+
+450 (Microsoft) - The Microsoft extension code indicated when Windows Parental Controls are turned on and are blocking access to the requested webpage.
+
+        450: 'Blocked by Windows Parental Controls'
+        '450_NAME': 'BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS'
+        '450_MESSAGE': 'The Microsoft extension code indicated when Windows Parental Controls are turned on and are blocking access to the requested webpage.'
+        BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS: 450
+
+498 (Esri) - Returned by ArcGIS for Server. Code 498 indicates an expired or otherwise invalid token.
+
+        498: 'Invalid Token'
+        '498_NAME': 'INVALID_TOKEN'
+        '498_MESSAGE': 'Returned by ArcGIS for Server. Code 498 indicates an expired or otherwise invalid token.'
+        INVALID_TOKEN: 498
+
+499 (Esri) - Returned by ArcGIS for Server. Code 499 indicates that a token is required but was not submitted.
+
+        499: 'Token Required'
+        '499_NAME': 'TOKEN_REQUIRED'
+        '499_MESSAGE': 'Returned by ArcGIS for Server. Code 499 indicates that a token is required but was not submitted.'
+        TOKEN_REQUIRED: 499
+
+509 (Apache Web Server/cPanel) - The server has exceeded the bandwidth specified by the server administrator.
+
+        509: 'Bandwidth Limit Exceeded'
+        '509_NAME': 'BANDWIDTH_LIMIT_EXCEEDED'
+        '509_MESSAGE': 'The server has exceeded the bandwidth specified by the server administrator.'
+        BANDWIDTH_LIMIT_EXCEEDED: 509
+
+530 - Used by the Pantheon web platform to indicate a site that has been frozen due to inactivity.
+
+        530: 'Site is frozen'
+        '530_NAME': 'SITE_IS_FROZEN'
+        '530_MESSAGE': 'Used by the Pantheon web platform to indicate a site that has been frozen due to inactivity.'
+        SITE_IS_FROZEN: 530
+
+598 (Informal convention)  - Used by some HTTP proxies to signal a network read timeout behind the proxy to a client in front of the proxy.
+
+        598: 'Network read timeout error'
+        '598_NAME': 'NETWORK_READ_TIMEOUT_ERROR'
+        '598_MESSAGE': 'Used by some HTTP proxies to signal a network read timeout behind the proxy to a client in front of the proxy.'
+        NETWORK_READ_TIMEOUT_ERROR: 598
+
+### Internet Information Services (IIS)
+
+Microsoft's Internet Information Services (IIS) web server expands the 4xx error space to signal errors with the client's request.
+
+      iis:
+
+440 - The client's session has expired and must log in again.
+
+        440: 'Login Time-out'
+        '440_NAME': 'LOGIN_TIME_OUT'
+        '440_MESSAGE': 'The client\'s session has expired and must log in again.'
+        LOGIN_TIME_OUT: 440
+
+449 - The server cannot honour the request because the user has not provided the required information.
+
+        449: 'Retry With'
+        '449_NAME': 'RETRY_WITH'
+        '449_MESSAGE': 'The server cannot honour the request because the user has not provided the required information.'
+        RETRY_WITH: 449
+
+451 - Used in Exchange ActiveSync when either a more efficient server is available or the server cannot access the users' mailbox.
+
+        451: 'Redirect'
+        '451_NAME': 'REDIRECT'
+        '451_MESSAGE': 'Used in Exchange ActiveSync when either a more efficient server is available or the server cannot access the users\' mailbox.'
+        REDIRECT: 451
+
+### NGINX
+
+The NGINX web server software expands the 4xx error space to signal issues with the client's request.
+
+      nginx:
+
+444 - Used internally to instruct the server to return no information to the client and close the connection immediately.
+
+        444: 'No Response'
+        '444_NAME': 'NO_RESPONSE'
+        '444_MESSAGE': 'Used internally to instruct the server to return no information to the client and close the connection immediately.'
+        NO_RESPONSE: 444
+
+494 - Client sent too large request or too long header line.
+
+        494: 'Request header too large'
+        '494_NAME': 'REQUEST_HEADER_TOO_LARGE'
+        '494_MESSAGE': 'Client sent too large request or too long header line.'
+        REQUEST_HEADER_TOO_LARGE: 494
+
+495 - An expansion of the 400 Bad Request response code, used when the client has provided an invalid client certificate.
+
+        495: 'SSL Certificate Error'
+        '495_NAME': 'SSL_CERTIFICATE_ERROR'
+        '495_MESSAGE': 'An expansion of the 400 Bad Request response code, used when the client has provided an invalid client certificate.'
+        SSL_CERTIFICATE_ERROR: 495
+
+496 - An expansion of the 400 Bad Request response code, used when a client certificate is required but not provided.
+
+        496: 'SSL Certificate Required'
+        '496_NAME': 'SSL_CERTIFICATE_REQUIRED'
+        '496_MESSAGE': 'An expansion of the 400 Bad Request response code, used when a client certificate is required but not provided.'
+        SSL_CERTIFICATE_REQUIRED: 496
+
+497 - An expansion of the 400 Bad Request response code, used when the client has made a HTTP request to a port listening for HTTPS requests.
+
+        497: 'HTTP Request Sent to HTTPS Port'
+        '497_NAME': 'HTTP_REQUEST_SENT_TO_HTTPS_PORT'
+        '497_MESSAGE': 'An expansion of the 400 Bad Request response code, used when the client has made a HTTP request to a port listening for HTTPS requests.'
+        HTTP_REQUEST_SENT_TO_HTTPS_PORT: 497
+
+499 - Used when the client has closed the request before the server could send a response.
+
+        499: 'Client Closed Request'
+        '499_NAME': 'CLIENT_CLOSED_REQUEST'
+        '499_MESSAGE': 'Used when the client has closed the request before the server could send a response.'
+        CLIENT_CLOSED_REQUEST: 499
+
+### Cloudflare
+
+Cloudflare's reverse proxy service expands the 5xx series of errors space to signal issues with the origin server.
+
+      cloudflare:
+
+520 - The 520 error is used as a "catch-all response for when the origin server returns something unexpected", listing connection resets, large headers, and empty or invalid responses as common triggers.
+
+        520: 'Unknown Error'
+        '520_NAME': 'UNKNOWN_ERROR'
+        '520_MESSAGE': 'The 520 error is used as a "catch-all response for when the origin server returns something unexpected", listing connection resets, large headers, and empty or invalid responses as common triggers.'
+        UNKNOWN_ERROR: 520
+
+521 - The origin server has refused the connection from Cloudflare.
+
+        521: 'Web Server Is Down'
+        '521_NAME': 'WEB_SERVER_IS_DOWN'
+        '521_MESSAGE': 'The origin server has refused the connection from Cloudflare.'
+        WEB_SERVER_IS_DOWN: 521
+
+522 - Cloudflare could not negotiate a TCP handshake with the origin server.
+
+        522: 'Connection Timed Out'
+        '522_NAME': 'CONNECTION_TIMED_OUT'
+        '522_MESSAGE': 'Cloudflare could not negotiate a TCP handshake with the origin server.'
+        CONNECTION_TIMED_OUT: 522
+
+523 - Cloudflare could not reach the origin server.
+
+        523: 'Origin Is Unreachable'
+        '523_NAME': 'ORIGIN_IS_UNREACHABLE'
+        '523_MESSAGE': 'Cloudflare could not reach the origin server.'
+        ORIGIN_IS_UNREACHABLE: 523
+
+524 - Cloudflare was able to complete a TCP connection to the origin server, but did not receive a timely HTTP response.
+
+        524: 'A Timeout Occurred'
+        '524_NAME': 'A_TIMEOUT_OCCURRED'
+        '524_MESSAGE': 'Cloudflare was able to complete a TCP connection to the origin server, but did not receive a timely HTTP response.'
+        A_TIMEOUT_OCCURRED: 524
+
+525 - Cloudflare could not negotiate a SSL/TLS handshake with the origin server.
+
+        525: 'SSL Handshake Failed'
+        '525_NAME': 'SSL_HANDSHAKE_FAILED'
+        '525_MESSAGE': 'Cloudflare could not negotiate a SSL/TLS handshake with the origin server.'
+        SSL_HANDSHAKE_FAILED: 525
+
+526 - Cloudflare could not validate the SSL/TLS certificate that the origin server presented.
+
+        526: 'Invalid SSL Certificate'
+        '526_NAME': 'INVALID_SSL_CERTIFICATE'
+        '526_MESSAGE': 'Cloudflare could not validate the SSL/TLS certificate that the origin server presented.'
+        INVALID_SSL_CERTIFICATE: 526
+
+527 - Error 527 indicates that the request timed out or failed after the WAN connection had been established.
+
+        527: 'Railgun Error'
+        '527_NAME': 'RAILGUN_ERROR'
+        '527_MESSAGE': 'Error 527 indicates that the request timed out or failed after the WAN connection had been established.'
+        RAILGUN_ERROR: 527
