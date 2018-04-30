@@ -1,6 +1,6 @@
 # Changelog: HTTP Status
 
-## Trunk
+## Version 1.1.0
 
 * extra: add unofficial, iis, nginx and cloudflare codes
 * package: publishing process
