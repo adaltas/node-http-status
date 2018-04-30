@@ -2,6 +2,7 @@
 
 ## Trunk
 
+* package: latest dependencies
 * readme: add author company
 
 ## Version 0.1.1 – Nov 13, 2012

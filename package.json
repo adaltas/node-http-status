@@ -4,7 +4,11 @@
   "description": "Interact with HTTP status code",
   "homepage": "https://github.com/adaltas/node-http-status",
   "author": "David Worms <david@adaltas.com>",
-  "keywords": ["http", "express", "connect"],
+  "keywords": [
+    "http",
+    "express",
+    "connect"
+  ],
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
@@ -15,16 +19,24 @@
     "url": "http://github.com/adaltas/node-http-status/issues"
   },
   "devDependencies": {
-    "coffee-script": "latest",
-    "mocha": "latest",
-    "should": "latest"
+    "coffeescript": "2.3.0",
+    "mocha": "5.1.1",
+    "should": "13.2.1"
   },
-  "contributors": [ 
-    { "name": "David Worms", "email": "david@adaltas.com" },
-    { "name": "Daniel Gasienica", "email": "daniel@gasienica.ch"}
+  "contributors": [
+    {
+      "name": "David Worms",
+      "email": "david@adaltas.com"
+    },
+    {
+      "name": "Daniel Gasienica",
+      "email": "daniel@gasienica.ch"
+    }
   ],
   "main": "lib/index.js",
-  "engines": { "node": ">= 0.4.0" },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
   "scripts": {
     "coffee": "node_modules/.bin/coffee -b -o lib src",
     "test": "NODE_ENV=test node_modules/.bin/mocha --compilers coffee:coffee-script/register --reporter dot"
