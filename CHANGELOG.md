@@ -2,6 +2,7 @@
 
 ## Trunk
 
+typescript: types files
 package: remove Makefile
 travis: test against Node.js 6,7,8
 
