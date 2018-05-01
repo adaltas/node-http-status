@@ -2,6 +2,7 @@
 
 ## Trunk
 
+package: remove Makefile
 travis: test against Node.js 6,7,8
 
 ## Version 1.1.0
