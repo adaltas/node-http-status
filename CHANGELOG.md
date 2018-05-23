@@ -1,6 +1,6 @@
 # Changelog: HTTP Status
 
-## Trunk
+## Version 1.1.1
 
 * codes: double 420 #26
 * codes: wrong keys for 305_MESSAGE and 305_NAME #25
