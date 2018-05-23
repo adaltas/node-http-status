@@ -2,9 +2,10 @@
 
 ## Trunk
 
-typescript: types files
-package: remove Makefile
-travis: test against Node.js 6,7,8
+* codes: wrong keys for 305_MESSAGE and 305_NAME #25
+* typescript: types files
+* package: remove Makefile
+* travis: test against Node.js 6,7,8
 
 ## Version 1.1.0
 

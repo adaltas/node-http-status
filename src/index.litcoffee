@@ -140,8 +140,8 @@ Further action must be taken in order to complete the request.
 305 (since HTTP/1.1) - The requested resource is available only through a proxy, the address for which is provided in the response.
 
     305: 'Use Proxy'
-    '304_NAME': 'USE_PROXY'
-    '304_MESSAGE': 'The requested resource is available only through a proxy, the address for which is provided in the response.'
+    '305_NAME': 'USE_PROXY'
+    '305_MESSAGE': 'The requested resource is available only through a proxy, the address for which is provided in the response.'
     USE_PROXY: 305
 
 306 - No longer used. Originally meant "Subsequent requests should use the specified proxy.
