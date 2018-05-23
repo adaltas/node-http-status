@@ -2,6 +2,7 @@
 
 ## Trunk
 
+* codes: double 420 #26
 * codes: wrong keys for 305_MESSAGE and 305_NAME #25
 * typescript: types files
 * package: remove Makefile
