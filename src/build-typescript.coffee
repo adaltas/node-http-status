@@ -8,12 +8,11 @@ for key,value of statuses
 
 fs.writeFile(
 	path.join __dirname, '../lib/index.d.ts'
-	'declare const httpStatus: httpStatusNS.HttpStatus; \n\n' + 
+	'declare const httpStatus: httpStatusNS.HttpStatus;\n\n' + 
 	'declare namespace httpStatusNS {\n' +
 	'export interface HttpStatus {\n' +
 		(values) +
 		'}\n}\n\n' +
-	'export = httpStatus;'
+	'export = httpStatus;\n'
 	(err) -> if err then throw new Error err
 )
-

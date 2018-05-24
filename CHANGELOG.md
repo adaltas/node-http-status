@@ -1,5 +1,9 @@
 # Changelog: HTTP Status
 
+## Trunk
+
+* typescript: generate correct typescript definitions file #28
+
 ## Version 1.1.1
 
 * codes: double 420 #26
