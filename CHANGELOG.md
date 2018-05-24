@@ -1,6 +1,6 @@
 # Changelog: HTTP Status
 
-## Trunk
+## Version 1.1.2
 
 * typescript: generate correct typescript definitions file #28
 
