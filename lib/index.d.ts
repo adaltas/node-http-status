@@ -1,243 +1,249 @@
-export = {
-	"100": "Continue",
-	"101": "Switching Protocols",
-	"200": "OK",
-	"201": "Created",
-	"202": "Accepted",
-	"203": "Non-Authoritative Information",
-	"204": "No Content",
-	"205": "Reset Content",
-	"206": "Partial Content",
-	"207": "Multi Status",
-	"208": "Already Reported",
-	"226": "IM Used",
-	"300": "Multiple Choices",
-	"301": "Moved Permanently",
-	"302": "Found",
-	"303": "See Other",
-	"304": "Not Modified",
-	"305": "Use Proxy",
-	"306": "Switch Proxy",
-	"307": "Temporary Redirect",
-	"308": "Permanent Redirect",
-	"400": "Bad Request",
-	"401": "Unauthorized",
-	"402": "Payment Required",
-	"403": "Forbidden",
-	"404": "Not Found",
-	"405": "Method Not Allowed",
-	"406": "Not Acceptable",
-	"407": "Proxy Authentication Required",
-	"408": "Request Time-out",
-	"409": "Conflict",
-	"410": "Gone",
-	"411": "Length Required",
-	"412": "Precondition Failed",
-	"413": "Request Entity Too Large",
-	"414": "Request-URI Too Large",
-	"415": "Unsupported Media Type",
-	"416": "Requested Range not Satisfiable",
-	"417": "Expectation Failed",
-	"418": "I'm a teapot",
-	"421": "Misdirected Request",
-	"422": "Unprocessable Entity",
-	"423": "Locked",
-	"424": "Failed Dependency",
-	"426": "Upgrade Required",
-	"428": "Precondition Required",
-	"429": "Too Many Requests",
-	"431": "Request Header Fields Too Large",
-	"451": "Unavailable For Legal Reasons",
-	"500": "Internal Server Error",
-	"501": "Not Implemented",
-	"502": "Bad Gateway",
-	"503": "Service Unavailable",
-	"504": "Gateway Time-out",
-	"505": "HTTP Version not Supported",
-	"506": "Variant Also Negotiates",
-	"507": "Insufficient Storage",
-	"508": "Loop Detected",
-	"510": "Not Extended",
-	"511": "Network Authentication Required",
-	"100_NAME": "CONTINUE",
-	"100_MESSAGE": "The server has received the request headers and the client should proceed to send the request body.",
-	"CONTINUE": 100,
-	"101_NAME": "SWITCHING_PROTOCOLS",
-	"101_MESSAGE": "The requester has asked the server to switch protocols and the server has agreed to do so.",
-	"SWITCHING_PROTOCOLS": 101,
-	"200_NAME": "OK",
-	"200_MESSAGE": "Standard response for successful HTTP requests.",
-	"OK": 200,
-	"201_NAME": "CREATED",
-	"201_MESSAGE": "The request has been fulfilled, resulting in the creation of a new resource.",
-	"CREATED": 201,
-	"202_NAME": "ACCEPTED",
-	"202_MESSAGE": "The request has been accepted for processing, but the processing has not been completed.",
-	"ACCEPTED": 202,
-	"203_NAME": "NON_AUTHORITATIVE_INFORMATION",
-	"203_MESSAGE": "The server is a transforming proxy (e.g. a Web accelerator) that received a 200 OK from its origin, but is returning a modified version of the origin's response.",
-	"NON_AUTHORITATIVE_INFORMATION": 203,
-	"204_NAME": "NO_CONTENT",
-	"204_MESSAGE": "The server successfully processed the request and is not returning any content.",
-	"NO_CONTENT": 204,
-	"205_NAME": "RESET_CONTENT",
-	"205_MESSAGE": "The server successfully processed the request, but is not returning any content. Unlike a 204 response, this response requires that the requester reset the document view.",
-	"RESET_CONTENT": 205,
-	"206_NAME": "PARTIAL_CONTENT",
-	"206_MESSAGE": "The server is delivering only part of the resource (byte serving) due to a range header sent by the client.",
-	"PARTIAL_CONTENT": 206,
-	"207_NAME": "MULTI_STATUS",
-	"207_MESSAGE": "The message body that follows is by default an XML message and can contain a number of separate response codes, depending on how many sub-requests were made.",
-	"MULTI_STATUS": 207,
-	"208_NAME": "ALREADY_REPORTED",
-	"208_MESSAGE": "The members of a DAV binding have already been enumerated in a preceding part of the (multistatus) response, and are not being included again.",
-	"ALREADY_REPORTED": 208,
-	"226_NAME": "IM_USED",
-	"226_MESSAGE": "The server has fulfilled a request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.",
-	"IM_USED": 226,
-	"300_NAME": "MULTIPLE_CHOICES",
-	"300_MESSAGE": "Indicates multiple options for the resource from which the client may choose.",
-	"MULTIPLE_CHOICES": 300,
-	"301_NAME": "MOVED_PERMANENTLY",
-	"301_MESSAGE": "This and all future requests should be directed to the given URI.",
-	"MOVED_PERMANENTLY": 301,
-	"302_NAME": "FOUND",
-	"302_MESSAGE": "This is an example of industry practice contradicting the standard. The HTTP/1.0 specification (RFC 1945) required the client to perform a temporary redirect (the original describing phrase was \"Moved Temporarily\"), but popular browsers implemented 302 with the functionality of a 303 See Other. Therefore, HTTP/1.1 added status codes 303 and 307 to distinguish between the two behaviours.",
-	"FOUND": 302,
-	"303_NAME": "SEE_OTHER",
-	"303_MESSAGE": "The response to the request can be found under another URI using the GET method.",
-	"SEE_OTHER": 303,
-	"304_NAME": "NOT_MODIFIED",
-	"304_MESSAGE": "Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match.",
-	"NOT_MODIFIED": 304,
-	"305_NAME": "USE_PROXY",
-	"305_MESSAGE": "The requested resource is available only through a proxy, the address for which is provided in the response.",
-	"USE_PROXY": 305,
-	"306_NAME": "SWITCH_PROXY",
-	"306_MESSAGE": "No longer used. Originally meant \"Subsequent requests should use the specified proxy.",
-	"SWITCH_PROXY": 306,
-	"307_NAME": "TEMPORARY_REDIRECT",
-	"307_MESSAGE": "In this case, the request should be repeated with another URI; however, future requests should still use the original URI.",
-	"TEMPORARY_REDIRECT": 307,
-	"308_NAME": "PERMANENT_REDIRECT",
-	"308_MESSAGE": "The request and all future requests should be repeated using another URI.",
-	"PERMANENT_REDIRECT": 308,
-	"400_NAME": "BAD_REQUEST",
-	"400_MESSAGE": "The server cannot or will not process the request due to an apparent client error.",
-	"BAD_REQUEST": 400,
-	"401_NAME": "UNAUTHORIZED",
-	"401_MESSAGE": "Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided.",
-	"UNAUTHORIZED": 401,
-	"402_NAME": "PAYMENT_REQUIRED",
-	"402_MESSAGE": "Reserved for future use. The original intention was that this code might be used as part of some form of digital cash or micropayment scheme, as proposed for example by GNU Taler, but that has not yet happened, and this code is not usually used.",
-	"PAYMENT_REQUIRED": 402,
-	"403_NAME": "FORBIDDEN",
-	"403_MESSAGE": "The request was valid, but the server is refusing action.",
-	"FORBIDDEN": 403,
-	"404_NAME": "NOT_FOUND",
-	"404_MESSAGE": "The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.",
-	"NOT_FOUND": 404,
-	"405_NAME": "METHOD_NOT_ALLOWED",
-	"405_MESSAGE": "A request method is not supported for the requested resource.",
-	"METHOD_NOT_ALLOWED": 405,
-	"406_NAME": "NOT_ACCEPTABLE",
-	"406_MESSAGE": "The requested resource is capable of generating only content not acceptable according to the Accept headers sent in the request.",
-	"NOT_ACCEPTABLE": 406,
-	"407_NAME": "PROXY_AUTHENTICATION_REQUIRED",
-	"407_MESSAGE": "The client must first authenticate itself with the proxy.",
-	"PROXY_AUTHENTICATION_REQUIRED": 407,
-	"408_NAME": "REQUEST_TIMEOUT",
-	"408_MESSAGE": "The server timed out waiting for the request.",
-	"REQUEST_TIMEOUT": 408,
-	"409_NAME": "CONFLICT",
-	"409_MESSAGE": "Indicates that the request could not be processed because of conflict in the request, such as an edit conflict between multiple simultaneous updates.",
-	"CONFLICT": 409,
-	"410_NAME": "GONE",
-	"410_MESSAGE": "Indicates that the resource requested is no longer available and will not be available again.",
-	"GONE": 410,
-	"411_NAME": "LENGTH_REQUIRED",
-	"411_MESSAGE": "The request did not specify the length of its content, which is required by the requested resource.",
-	"LENGTH_REQUIRED": 411,
-	"412_NAME": "PRECONDITION_FAILED",
-	"412_MESSAGE": "The server does not meet one of the preconditions that the requester put on the request.",
-	"PRECONDITION_FAILED": 412,
-	"413_NAME": "REQUEST_ENTITY_TOO_LARGE",
-	"413_MESSAGE": "The request is larger than the server is willing or able to process. Previously called \"Request Entity Too Large\".",
-	"REQUEST_ENTITY_TOO_LARGE": 413,
-	"414_NAME": "REQUEST_URI_TOO_LONG",
-	"414_MESSAGE": "The URI provided was too long for the server to process.",
-	"REQUEST_URI_TOO_LONG": 414,
-	"415_NAME": "UNSUPPORTED_MEDIA_TYPE",
-	"415_MESSAGE": "The request entity has a media type which the server or resource does not support.",
-	"UNSUPPORTED_MEDIA_TYPE": 415,
-	"416_NAME": "REQUESTED_RANGE_NOT_SATISFIABLE",
-	"416_MESSAGE": "The client has asked for a portion of the file (byte serving), but the server cannot supply that portion.",
-	"REQUESTED_RANGE_NOT_SATISFIABLE": 416,
-	"417_NAME": "EXPECTATION_FAILED",
-	"417_MESSAGE": "The server cannot meet the requirements of the Expect request-header field.",
-	"EXPECTATION_FAILED": 417,
-	"418_NAME": "IM_A_TEAPOT",
-	"418_MESSAGE": "Any attempt to brew coffee with a teapot should result in the error code \"418 I'm a teapot\". The resulting entity body MAY be short and stout.",
-	"IM_A_TEAPOT": 418,
-	"421_NAME": "MISDIRECTED_REQUEST",
-	"421_MESSAGE": "The request was directed at a server that is not able to produce a response.",
-	"MISDIRECTED_REQUEST": 421,
-	"422_NAME": "UNPROCESSABLE_ENTITY",
-	"422_MESSAGE": "The request was well-formed but was unable to be followed due to semantic errors.",
-	"UNPROCESSABLE_ENTITY": 422,
-	"423_NAME": "LOCKED",
-	"423_MESSAGE": "The resource that is being accessed is locked.",
-	"LOCKED": 423,
-	"424_NAME": "FAILED_DEPENDENCY",
-	"424_MESSAGE": "The request failed because it depended on another request and that request failed.",
-	"FAILED_DEPENDENCY": 424,
-	"426_NAME": "UPGRADE_REQUIRED",
-	"426_MESSAGE": "The client should switch to a different protocol such as TLS/1.0, given in the Upgrade header field.",
-	"UPGRADE_REQUIRED": 426,
-	"428_NAME": "PRECONDITION_REQUIRED",
-	"428_MESSAGE": "The origin server requires the request to be conditional.",
-	"PRECONDITION_REQUIRED": 428,
-	"429_NAME": "TOO_MANY_REQUESTS",
-	"429_MESSAGE": "The user has sent too many requests in a given amount of time.",
-	"TOO_MANY_REQUESTS": 429,
-	"431_NAME": "REQUEST_HEADER_FIELDS_TOO_LARGE",
-	"431_MESSAGE": "The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large.",
-	"REQUEST_HEADER_FIELDS_TOO_LARGE": 431,
-	"451_NAME": "UNAVAILABLE_FOR_LEGAL_REASONS",
-	"451_MESSAGE": "A server operator has received a legal demand to deny access to a resource or to a set of resources that includes the requested resource.",
-	"UNAVAILABLE_FOR_LEGAL_REASONS": 451,
-	"500_NAME": "INTERNAL_SERVER_ERROR",
-	"500_MESSAGE": "A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.",
-	"INTERNAL_SERVER_ERROR": 500,
-	"501_NAME": "NOT_IMPLEMENTED",
-	"501_MESSAGE": "The server either does not recognize the request method, or it lacks the ability to fulfil the request. Usually this implies future availability.",
-	"NOT_IMPLEMENTED": 501,
-	"_NAME": "BAD_GATEWAY",
-	"_MESSAGE": "The server was acting as a gateway or proxy and received an invalid response from the upstream server.",
-	"BAD_GATEWAY": 502,
-	"503_NAME": "SERVICE_UNAVAILABLE",
-	"503_MESSAGE": "The server is currently unavailable (because it is overloaded or down for maintenance). Generally, this is a temporary state.",
-	"SERVICE_UNAVAILABLE": 503,
-	"504_NAME": "GATEWAY_TIMEOUT",
-	"504_MESSAGE": "The server was acting as a gateway or proxy and did not receive a timely response from the upstream server.",
-	"GATEWAY_TIMEOUT": 504,
-	"505_NAME": "HTTP_VERSION_NOT_SUPPORTED",
-	"505_MESSAGE": "The server does not support the HTTP protocol version used in the request.",
-	"HTTP_VERSION_NOT_SUPPORTED": 505,
-	"506_NAME": "VARIANT_ALSO_NEGOTIATES",
-	"506_MESSAGE": "Transparent content negotiation for the request results in a circular reference.",
-	"VARIANT_ALSO_NEGOTIATES": 506,
-	"507_NAME": "INSUFFICIENT_STORAGE",
-	"507_MESSAGE": "The server is unable to store the representation needed to complete the request.",
-	"INSUFFICIENT_STORAGE": 507,
-	"508_NAME": "LOOP_DETECTED",
-	"508_MESSAGE": "The server detected an infinite loop while processing the request.",
-	"LOOP_DETECTED": 508,
-	"510_NAME": "NOT_EXTENDED",
-	"510_MESSAGE": "Further extensions to the request are required for the server to fulfil it.",
-	"NOT_EXTENDED": 510,
-	"511_NAME": "NETWORK_AUTHENTICATION_REQUIRED",
-	"511_MESSAGE": "The client needs to authenticate to gain network access. Intended for use by intercepting proxies used to control access to the network.",
-	"NETWORK_AUTHENTICATION_REQUIRED": 511,
-	"extra": {"unofficial":{"103":"Checkpoint","420":"Enhance Your Calm","450":"Blocked by Windows Parental Controls","498":"Invalid Token","499":"Token Required","509":"Bandwidth Limit Exceeded","530":"Site is frozen","598":"Network read timeout error","103_NAME":"CHECKPOINT","103_MESSAGE":"Used in the resumable requests proposal to resume aborted PUT or POST requests.","CHECKPOINT":103,"420_NAME":"ENHANCE_YOUR_CALM","420_MESSAGE":"Returned by version 1 of the Twitter Search and Trends API when the client is being rate limited; versions 1.1 and later use the 429 Too Many Requests response code instead.","ENHANCE_YOUR_CALM":420,"450_NAME":"BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS","450_MESSAGE":"The Microsoft extension code indicated when Windows Parental Controls are turned on and are blocking access to the requested webpage.","BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS":450,"498_NAME":"INVALID_TOKEN","498_MESSAGE":"Returned by ArcGIS for Server. Code 498 indicates an expired or otherwise invalid token.","INVALID_TOKEN":498,"499_NAME":"TOKEN_REQUIRED","499_MESSAGE":"Returned by ArcGIS for Server. Code 499 indicates that a token is required but was not submitted.","TOKEN_REQUIRED":499,"509_NAME":"BANDWIDTH_LIMIT_EXCEEDED","509_MESSAGE":"The server has exceeded the bandwidth specified by the server administrator.","BANDWIDTH_LIMIT_EXCEEDED":509,"530_NAME":"SITE_IS_FROZEN","530_MESSAGE":"Used by the Pantheon web platform to indicate a site that has been frozen due to inactivity.","SITE_IS_FROZEN":530,"598_NAME":"NETWORK_READ_TIMEOUT_ERROR","598_MESSAGE":"Used by some HTTP proxies to signal a network read timeout behind the proxy to a client in front of the proxy.","NETWORK_READ_TIMEOUT_ERROR":598},"iis":{"440":"Login Time-out","449":"Retry With","451":"Redirect","440_NAME":"LOGIN_TIME_OUT","440_MESSAGE":"The client's session has expired and must log in again.","LOGIN_TIME_OUT":440,"449_NAME":"RETRY_WITH","449_MESSAGE":"The server cannot honour the request because the user has not provided the required information.","RETRY_WITH":449,"451_NAME":"REDIRECT","451_MESSAGE":"Used in Exchange ActiveSync when either a more efficient server is available or the server cannot access the users' mailbox.","REDIRECT":451},"nginx":{"444":"No Response","494":"Request header too large","495":"SSL Certificate Error","496":"SSL Certificate Required","497":"HTTP Request Sent to HTTPS Port","499":"Client Closed Request","444_NAME":"NO_RESPONSE","444_MESSAGE":"Used internally to instruct the server to return no information to the client and close the connection immediately.","NO_RESPONSE":444,"494_NAME":"REQUEST_HEADER_TOO_LARGE","494_MESSAGE":"Client sent too large request or too long header line.","REQUEST_HEADER_TOO_LARGE":494,"495_NAME":"SSL_CERTIFICATE_ERROR","495_MESSAGE":"An expansion of the 400 Bad Request response code, used when the client has provided an invalid client certificate.","SSL_CERTIFICATE_ERROR":495,"496_NAME":"SSL_CERTIFICATE_REQUIRED","496_MESSAGE":"An expansion of the 400 Bad Request response code, used when a client certificate is required but not provided.","SSL_CERTIFICATE_REQUIRED":496,"497_NAME":"HTTP_REQUEST_SENT_TO_HTTPS_PORT","497_MESSAGE":"An expansion of the 400 Bad Request response code, used when the client has made a HTTP request to a port listening for HTTPS requests.","HTTP_REQUEST_SENT_TO_HTTPS_PORT":497,"499_NAME":"CLIENT_CLOSED_REQUEST","499_MESSAGE":"Used when the client has closed the request before the server could send a response.","CLIENT_CLOSED_REQUEST":499},"cloudflare":{"520":"Unknown Error","521":"Web Server Is Down","522":"Connection Timed Out","523":"Origin Is Unreachable","524":"A Timeout Occurred","525":"SSL Handshake Failed","526":"Invalid SSL Certificate","527":"Railgun Error","520_NAME":"UNKNOWN_ERROR","520_MESSAGE":"The 520 error is used as a \"catch-all response for when the origin server returns something unexpected\", listing connection resets, large headers, and empty or invalid responses as common triggers.","UNKNOWN_ERROR":520,"521_NAME":"WEB_SERVER_IS_DOWN","521_MESSAGE":"The origin server has refused the connection from Cloudflare.","WEB_SERVER_IS_DOWN":521,"522_NAME":"CONNECTION_TIMED_OUT","522_MESSAGE":"Cloudflare could not negotiate a TCP handshake with the origin server.","CONNECTION_TIMED_OUT":522,"523_NAME":"ORIGIN_IS_UNREACHABLE","523_MESSAGE":"Cloudflare could not reach the origin server.","ORIGIN_IS_UNREACHABLE":523,"524_NAME":"A_TIMEOUT_OCCURRED","524_MESSAGE":"Cloudflare was able to complete a TCP connection to the origin server, but did not receive a timely HTTP response.","A_TIMEOUT_OCCURRED":524,"525_NAME":"SSL_HANDSHAKE_FAILED","525_MESSAGE":"Cloudflare could not negotiate a SSL/TLS handshake with the origin server.","SSL_HANDSHAKE_FAILED":525,"526_NAME":"INVALID_SSL_CERTIFICATE","526_MESSAGE":"Cloudflare could not validate the SSL/TLS certificate that the origin server presented.","INVALID_SSL_CERTIFICATE":526,"527_NAME":"RAILGUN_ERROR","527_MESSAGE":"Error 527 indicates that the request timed out or failed after the WAN connection had been established.","RAILGUN_ERROR":527}},
+declare const httpStatus: httpStatusNS.HttpStatus;
+
+declare namespace httpStatusNS {
+export interface HttpStatus {
+	"100": string;
+	"101": string;
+	"200": string;
+	"201": string;
+	"202": string;
+	"203": string;
+	"204": string;
+	"205": string;
+	"206": string;
+	"207": string;
+	"208": string;
+	"226": string;
+	"300": string;
+	"301": string;
+	"302": string;
+	"303": string;
+	"304": string;
+	"305": string;
+	"306": string;
+	"307": string;
+	"308": string;
+	"400": string;
+	"401": string;
+	"402": string;
+	"403": string;
+	"404": string;
+	"405": string;
+	"406": string;
+	"407": string;
+	"408": string;
+	"409": string;
+	"410": string;
+	"411": string;
+	"412": string;
+	"413": string;
+	"414": string;
+	"415": string;
+	"416": string;
+	"417": string;
+	"418": string;
+	"421": string;
+	"422": string;
+	"423": string;
+	"424": string;
+	"426": string;
+	"428": string;
+	"429": string;
+	"431": string;
+	"451": string;
+	"500": string;
+	"501": string;
+	"502": string;
+	"503": string;
+	"504": string;
+	"505": string;
+	"506": string;
+	"507": string;
+	"508": string;
+	"510": string;
+	"511": string;
+	"100_NAME": string;
+	"100_MESSAGE": string;
+	"CONTINUE": number;
+	"101_NAME": string;
+	"101_MESSAGE": string;
+	"SWITCHING_PROTOCOLS": number;
+	"200_NAME": string;
+	"200_MESSAGE": string;
+	"OK": number;
+	"201_NAME": string;
+	"201_MESSAGE": string;
+	"CREATED": number;
+	"202_NAME": string;
+	"202_MESSAGE": string;
+	"ACCEPTED": number;
+	"203_NAME": string;
+	"203_MESSAGE": string;
+	"NON_AUTHORITATIVE_INFORMATION": number;
+	"204_NAME": string;
+	"204_MESSAGE": string;
+	"NO_CONTENT": number;
+	"205_NAME": string;
+	"205_MESSAGE": string;
+	"RESET_CONTENT": number;
+	"206_NAME": string;
+	"206_MESSAGE": string;
+	"PARTIAL_CONTENT": number;
+	"207_NAME": string;
+	"207_MESSAGE": string;
+	"MULTI_STATUS": number;
+	"208_NAME": string;
+	"208_MESSAGE": string;
+	"ALREADY_REPORTED": number;
+	"226_NAME": string;
+	"226_MESSAGE": string;
+	"IM_USED": number;
+	"300_NAME": string;
+	"300_MESSAGE": string;
+	"MULTIPLE_CHOICES": number;
+	"301_NAME": string;
+	"301_MESSAGE": string;
+	"MOVED_PERMANENTLY": number;
+	"302_NAME": string;
+	"302_MESSAGE": string;
+	"FOUND": number;
+	"303_NAME": string;
+	"303_MESSAGE": string;
+	"SEE_OTHER": number;
+	"304_NAME": string;
+	"304_MESSAGE": string;
+	"NOT_MODIFIED": number;
+	"305_NAME": string;
+	"305_MESSAGE": string;
+	"USE_PROXY": number;
+	"306_NAME": string;
+	"306_MESSAGE": string;
+	"SWITCH_PROXY": number;
+	"307_NAME": string;
+	"307_MESSAGE": string;
+	"TEMPORARY_REDIRECT": number;
+	"308_NAME": string;
+	"308_MESSAGE": string;
+	"PERMANENT_REDIRECT": number;
+	"400_NAME": string;
+	"400_MESSAGE": string;
+	"BAD_REQUEST": number;
+	"401_NAME": string;
+	"401_MESSAGE": string;
+	"UNAUTHORIZED": number;
+	"402_NAME": string;
+	"402_MESSAGE": string;
+	"PAYMENT_REQUIRED": number;
+	"403_NAME": string;
+	"403_MESSAGE": string;
+	"FORBIDDEN": number;
+	"404_NAME": string;
+	"404_MESSAGE": string;
+	"NOT_FOUND": number;
+	"405_NAME": string;
+	"405_MESSAGE": string;
+	"METHOD_NOT_ALLOWED": number;
+	"406_NAME": string;
+	"406_MESSAGE": string;
+	"NOT_ACCEPTABLE": number;
+	"407_NAME": string;
+	"407_MESSAGE": string;
+	"PROXY_AUTHENTICATION_REQUIRED": number;
+	"408_NAME": string;
+	"408_MESSAGE": string;
+	"REQUEST_TIMEOUT": number;
+	"409_NAME": string;
+	"409_MESSAGE": string;
+	"CONFLICT": number;
+	"410_NAME": string;
+	"410_MESSAGE": string;
+	"GONE": number;
+	"411_NAME": string;
+	"411_MESSAGE": string;
+	"LENGTH_REQUIRED": number;
+	"412_NAME": string;
+	"412_MESSAGE": string;
+	"PRECONDITION_FAILED": number;
+	"413_NAME": string;
+	"413_MESSAGE": string;
+	"REQUEST_ENTITY_TOO_LARGE": number;
+	"414_NAME": string;
+	"414_MESSAGE": string;
+	"REQUEST_URI_TOO_LONG": number;
+	"415_NAME": string;
+	"415_MESSAGE": string;
+	"UNSUPPORTED_MEDIA_TYPE": number;
+	"416_NAME": string;
+	"416_MESSAGE": string;
+	"REQUESTED_RANGE_NOT_SATISFIABLE": number;
+	"417_NAME": string;
+	"417_MESSAGE": string;
+	"EXPECTATION_FAILED": number;
+	"418_NAME": string;
+	"418_MESSAGE": string;
+	"IM_A_TEAPOT": number;
+	"421_NAME": string;
+	"421_MESSAGE": string;
+	"MISDIRECTED_REQUEST": number;
+	"422_NAME": string;
+	"422_MESSAGE": string;
+	"UNPROCESSABLE_ENTITY": number;
+	"423_NAME": string;
+	"423_MESSAGE": string;
+	"LOCKED": number;
+	"424_NAME": string;
+	"424_MESSAGE": string;
+	"FAILED_DEPENDENCY": number;
+	"426_NAME": string;
+	"426_MESSAGE": string;
+	"UPGRADE_REQUIRED": number;
+	"428_NAME": string;
+	"428_MESSAGE": string;
+	"PRECONDITION_REQUIRED": number;
+	"429_NAME": string;
+	"429_MESSAGE": string;
+	"TOO_MANY_REQUESTS": number;
+	"431_NAME": string;
+	"431_MESSAGE": string;
+	"REQUEST_HEADER_FIELDS_TOO_LARGE": number;
+	"451_NAME": string;
+	"451_MESSAGE": string;
+	"UNAVAILABLE_FOR_LEGAL_REASONS": number;
+	"500_NAME": string;
+	"500_MESSAGE": string;
+	"INTERNAL_SERVER_ERROR": number;
+	"501_NAME": string;
+	"501_MESSAGE": string;
+	"NOT_IMPLEMENTED": number;
+	"_NAME": string;
+	"_MESSAGE": string;
+	"BAD_GATEWAY": number;
+	"503_NAME": string;
+	"503_MESSAGE": string;
+	"SERVICE_UNAVAILABLE": number;
+	"504_NAME": string;
+	"504_MESSAGE": string;
+	"GATEWAY_TIMEOUT": number;
+	"505_NAME": string;
+	"505_MESSAGE": string;
+	"HTTP_VERSION_NOT_SUPPORTED": number;
+	"506_NAME": string;
+	"506_MESSAGE": string;
+	"VARIANT_ALSO_NEGOTIATES": number;
+	"507_NAME": string;
+	"507_MESSAGE": string;
+	"INSUFFICIENT_STORAGE": number;
+	"508_NAME": string;
+	"508_MESSAGE": string;
+	"LOOP_DETECTED": number;
+	"510_NAME": string;
+	"510_MESSAGE": string;
+	"NOT_EXTENDED": number;
+	"511_NAME": string;
+	"511_MESSAGE": string;
+	"NETWORK_AUTHENTICATION_REQUIRED": number;
+	"extra": number;
 }
+}
+
+export = httpStatus;
