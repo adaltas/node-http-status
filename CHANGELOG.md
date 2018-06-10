@@ -1,5 +1,9 @@
 # Changelog: HTTP Status
 
+## Trunk
+
+* typescript: use primitives
+
 ## Version 1.1.2
 
 * typescript: generate correct typescript definitions file #28
