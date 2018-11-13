@@ -1,5 +1,10 @@
 # Changelog: HTTP Status
 
+## Trunk
+
+* ts: rewrite declaration type file
+* ts: mocha integration
+
 ## Version 1.2.0
 
 * typescript: use primitives

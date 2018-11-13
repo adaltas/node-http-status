@@ -19,9 +19,14 @@
     "url": "http://github.com/adaltas/node-http-status/issues"
   },
   "devDependencies": {
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.6",
+    "@types/should": "^13.0.0",
     "coffeescript": "2.3.0",
     "mocha": "5.1.1",
-    "should": "13.2.1"
+    "should": "13.2.1",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.6"
   },
   "contributors": [
     {
@@ -45,9 +50,8 @@
     "patch": "npm version patch -m 'Bump to version %s'",
     "minor": "npm version minor -m 'Bump to version %s'",
     "major": "npm version major -m 'Bump to version %s'",
-    "coffee": "coffee -b -o lib src && coffee src/build-typescript.coffee",
-    "pretest": "coffee -b -o lib src",
-    "test": "mocha test/**/*.coffee",
-    "posttest": "coffee src/build-typescript.coffee"
+    "coffee": "coffee -b -o lib src",
+    "pretest": "coffee -b -o lib src && cp src/index.d.ts lib",
+    "test": "mocha test/**/*.coffee"
   }
 }
