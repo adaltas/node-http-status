@@ -1,5 +1,9 @@
 # Changelog: HTTP Status
 
+## Trunk
+
+* ts: define properties as readonly
+
 ## Version 1.3.0
 
 * codes: new codes 102 and 103

@@ -8,305 +8,305 @@ declare namespace httpStatus {
 	
 	interface HttpStatus {
 		
-	  '100': string;
-	  '100_NAME': string;
-	  '100_MESSAGE': string;
-	  'CONTINUE': number;
+	  readonly '100': string;
+	  readonly '100_NAME': string;
+	  readonly '100_MESSAGE': string;
+	  readonly 'CONTINUE': number;
 
-	  '101': string;
-	  '101_NAME': string;
-	  '101_MESSAGE': string;
-	  'SWITCHING_PROTOCOLS': number;
+	  readonly '101': string;
+	  readonly '101_NAME': string;
+	  readonly '101_MESSAGE': string;
+	  readonly 'SWITCHING_PROTOCOLS': number;
 
-	  '200': string;
-	  '200_NAME': string;
-	  '200_MESSAGE': string;
-	  'OK': number;
+	  readonly '200': string;
+	  readonly '200_NAME': string;
+	  readonly '200_MESSAGE': string;
+	  readonly 'OK': number;
 
-	  '201': string;
-	  '201_NAME': string;
-	  '201_MESSAGE': string;
-	  'CREATED': number;
+	  readonly '201': string;
+	  readonly '201_NAME': string;
+	  readonly '201_MESSAGE': string;
+	  readonly 'CREATED': number;
 
-	  '202': string;
-	  '202_NAME': string;
-	  '202_MESSAGE': string;
-	  'ACCEPTED': number;
+	  readonly '202': string;
+	  readonly '202_NAME': string;
+	  readonly '202_MESSAGE': string;
+	  readonly 'ACCEPTED': number;
 
-	  '203': string;
-	  '203_NAME': string;
-	  '203_MESSAGE': string;
-	  'NON_AUTHORITATIVE_INFORMATION': number;
+	  readonly '203': string;
+	  readonly '203_NAME': string;
+	  readonly '203_MESSAGE': string;
+	  readonly 'NON_AUTHORITATIVE_INFORMATION': number;
 
-	  '204': string;
-	  '204_NAME': string;
-	  '204_MESSAGE': string;
-	  'NO_CONTENT': number;
+	  readonly '204': string;
+	  readonly '204_NAME': string;
+	  readonly '204_MESSAGE': string;
+	  readonly 'NO_CONTENT': number;
 
-	  '205': string;
-	  '205_NAME': string;
-	  '205_MESSAGE': string;
-	  'RESET_CONTENT': number;
+	  readonly '205': string;
+	  readonly '205_NAME': string;
+	  readonly '205_MESSAGE': string;
+	  readonly 'RESET_CONTENT': number;
 
-	  '206': string;
-	  '206_NAME': string;
-	  '206_MESSAGE': string;
-	  'PARTIAL_CONTENT': number;
+	  readonly '206': string;
+	  readonly '206_NAME': string;
+	  readonly '206_MESSAGE': string;
+	  readonly 'PARTIAL_CONTENT': number;
 
-	  '207': string;
-	  '207_NAME': string;
-	  '207_MESSAGE': string;
-	  'MULTI_STATUS': number;
+	  readonly '207': string;
+	  readonly '207_NAME': string;
+	  readonly '207_MESSAGE': string;
+	  readonly 'MULTI_STATUS': number;
 
-	  '208': string;
-	  '208_NAME': string;
-	  '208_MESSAGE': string;
-	  'ALREADY_REPORTED': number;
+	  readonly '208': string;
+	  readonly '208_NAME': string;
+	  readonly '208_MESSAGE': string;
+	  readonly 'ALREADY_REPORTED': number;
 
-	  '226': string;
-	  '226_NAME': string;
-	  '226_MESSAGE': string;
-	  'IM_USED': number;
+	  readonly '226': string;
+	  readonly '226_NAME': string;
+	  readonly '226_MESSAGE': string;
+	  readonly 'IM_USED': number;
 
-	  '300': string;
-	  '300_NAME': string;
-	  '300_MESSAGE': string;
-	  'MULTIPLE_CHOICES': number;
+	  readonly '300': string;
+	  readonly '300_NAME': string;
+	  readonly '300_MESSAGE': string;
+	  readonly 'MULTIPLE_CHOICES': number;
 
-	  '301': string;
-	  '301_NAME': string;
-	  '301_MESSAGE': string;
-	  'MOVED_PERMANENTLY': number;
+	  readonly '301': string;
+	  readonly '301_NAME': string;
+	  readonly '301_MESSAGE': string;
+	  readonly 'MOVED_PERMANENTLY': number;
 
-	  '302': string;
-	  '302_NAME': string;
-	  '302_MESSAGE': string;
-	  'FOUND': number;
+	  readonly '302': string;
+	  readonly '302_NAME': string;
+	  readonly '302_MESSAGE': string;
+	  readonly 'FOUND': number;
 
-	  '303': string;
-	  '303_NAME': string;
-	  '303_MESSAGE': string;
-	  'SEE_OTHER': number;
+	  readonly '303': string;
+	  readonly '303_NAME': string;
+	  readonly '303_MESSAGE': string;
+	  readonly 'SEE_OTHER': number;
 
-	  '304': string;
-	  '304_NAME': string;
-	  '304_MESSAGE': string;
-	  'NOT_MODIFIED': number;
+	  readonly '304': string;
+	  readonly '304_NAME': string;
+	  readonly '304_MESSAGE': string;
+	  readonly 'NOT_MODIFIED': number;
 
-	  '305': string;
-	  '305_NAME': string;
-	  '305_MESSAGE': string;
-	  'USE_PROXY': number;
+	  readonly '305': string;
+	  readonly '305_NAME': string;
+	  readonly '305_MESSAGE': string;
+	  readonly 'USE_PROXY': number;
 
-	  '306': string;
-	  '306_NAME': string;
-	  '306_MESSAGE': string;
-	  'SWITCH_PROXY': number;
+	  readonly '306': string;
+	  readonly '306_NAME': string;
+	  readonly '306_MESSAGE': string;
+	  readonly 'SWITCH_PROXY': number;
 
-	  '307': string;
-	  '307_NAME': string;
-	  '307_MESSAGE': string;
-	  'TEMPORARY_REDIRECT': number;
+	  readonly '307': string;
+	  readonly '307_NAME': string;
+	  readonly '307_MESSAGE': string;
+	  readonly 'TEMPORARY_REDIRECT': number;
 
-	  '308': string;
-	  '308_NAME': string;
-	  '308_MESSAGE': string;
-	  'PERMANENT_REDIRECT': number;
+	  readonly '308': string;
+	  readonly '308_NAME': string;
+	  readonly '308_MESSAGE': string;
+	  readonly 'PERMANENT_REDIRECT': number;
 
-	  '400': string;
-	  '400_NAME': string;
-	  '400_MESSAGE': string;
-	  'BAD_REQUEST': number;
+	  readonly '400': string;
+	  readonly '400_NAME': string;
+	  readonly '400_MESSAGE': string;
+	  readonly 'BAD_REQUEST': number;
 
-	  '401': string;
-	  '401_NAME': string;
-	  '401_MESSAGE': string;
-	  'UNAUTHORIZED': number;
+	  readonly '401': string;
+	  readonly '401_NAME': string;
+	  readonly '401_MESSAGE': string;
+	  readonly 'UNAUTHORIZED': number;
 
-	  '402': string;
-	  '402_NAME': string;
-	  '402_MESSAGE': string;
-	  'PAYMENT_REQUIRED': number;
+	  readonly '402': string;
+	  readonly '402_NAME': string;
+	  readonly '402_MESSAGE': string;
+	  readonly 'PAYMENT_REQUIRED': number;
 
-	  '403': string;
-	  '403_NAME': string;
-	  '403_MESSAGE': string;
-	  'FORBIDDEN': number;
+	  readonly '403': string;
+	  readonly '403_NAME': string;
+	  readonly '403_MESSAGE': string;
+	  readonly 'FORBIDDEN': number;
 
-	  '404': string;
-	  '404_NAME': string;
-	  '404_MESSAGE': string;
-	  'NOT_FOUND': number;
+	  readonly '404': string;
+	  readonly '404_NAME': string;
+	  readonly '404_MESSAGE': string;
+	  readonly 'NOT_FOUND': number;
 
-	  '405': string;
-	  '405_NAME': string;
-	  '405_MESSAGE': string;
-	  'METHOD_NOT_ALLOWED': number;
+	  readonly '405': string;
+	  readonly '405_NAME': string;
+	  readonly '405_MESSAGE': string;
+	  readonly 'METHOD_NOT_ALLOWED': number;
 
-	  '406': string;
-	  '406_NAME': string;
-	  '406_MESSAGE': string;
-	  'NOT_ACCEPTABLE': number;
+	  readonly '406': string;
+	  readonly '406_NAME': string;
+	  readonly '406_MESSAGE': string;
+	  readonly 'NOT_ACCEPTABLE': number;
 
-	  '407': string;
-	  '407_NAME': string;
-	  '407_MESSAGE': string;
-	  'PROXY_AUTHENTICATION_REQUIRED': number;
+	  readonly '407': string;
+	  readonly '407_NAME': string;
+	  readonly '407_MESSAGE': string;
+	  readonly 'PROXY_AUTHENTICATION_REQUIRED': number;
 
-	  '408': string;
-	  '408_NAME': string;
-	  '408_MESSAGE': string;
-	  'REQUEST_TIMEOUT': number;
+	  readonly '408': string;
+	  readonly '408_NAME': string;
+	  readonly '408_MESSAGE': string;
+	  readonly 'REQUEST_TIMEOUT': number;
 
-	  '409': string;
-	  '409_NAME': string;
-	  '409_MESSAGE': string;
-	  'CONFLICT': number;
+	  readonly '409': string;
+	  readonly '409_NAME': string;
+	  readonly '409_MESSAGE': string;
+	  readonly 'CONFLICT': number;
 
-	  '410': string;
-	  '410_NAME': string;
-	  '410_MESSAGE': string;
-	  'GONE': number;
+	  readonly '410': string;
+	  readonly '410_NAME': string;
+	  readonly '410_MESSAGE': string;
+	  readonly 'GONE': number;
 
-	  '411': string;
-	  '411_NAME': string;
-	  '411_MESSAGE': string;
-	  'LENGTH_REQUIRED': number;
+	  readonly '411': string;
+	  readonly '411_NAME': string;
+	  readonly '411_MESSAGE': string;
+	  readonly 'LENGTH_REQUIRED': number;
 
-	  '412': string;
-	  '412_NAME': string;
-	  '412_MESSAGE': string;
-	  'PRECONDITION_FAILED': number;
+	  readonly '412': string;
+	  readonly '412_NAME': string;
+	  readonly '412_MESSAGE': string;
+	  readonly 'PRECONDITION_FAILED': number;
 
-	  '413': string;
-	  '413_NAME': string;
-	  '413_MESSAGE': string;
-	  'REQUEST_ENTITY_TOO_LARGE': number;
+	  readonly '413': string;
+	  readonly '413_NAME': string;
+	  readonly '413_MESSAGE': string;
+	  readonly 'REQUEST_ENTITY_TOO_LARGE': number;
 
-	  '414': string;
-	  '414_NAME': string;
-	  '414_MESSAGE': string;
-	  'REQUEST_URI_TOO_LONG': number;
+	  readonly '414': string;
+	  readonly '414_NAME': string;
+	  readonly '414_MESSAGE': string;
+	  readonly 'REQUEST_URI_TOO_LONG': number;
 
-	  '415': string;
-	  '415_NAME': string;
-	  '415_MESSAGE': string;
-	  'UNSUPPORTED_MEDIA_TYPE': number;
+	  readonly '415': string;
+	  readonly '415_NAME': string;
+	  readonly '415_MESSAGE': string;
+	  readonly 'UNSUPPORTED_MEDIA_TYPE': number;
 
-	  '416': string;
-	  '416_NAME': string;
-	  '416_MESSAGE': string;
-	  'REQUESTED_RANGE_NOT_SATISFIABLE': number;
+	  readonly '416': string;
+	  readonly '416_NAME': string;
+	  readonly '416_MESSAGE': string;
+	  readonly 'REQUESTED_RANGE_NOT_SATISFIABLE': number;
 
-	  '417': string;
-	  '417_NAME': string;
-	  '417_MESSAGE': string;
-	  'EXPECTATION_FAILED': number;
+	  readonly '417': string;
+	  readonly '417_NAME': string;
+	  readonly '417_MESSAGE': string;
+	  readonly 'EXPECTATION_FAILED': number;
 
-	  '418': string;
-	  '418_NAME': string;
-	  '418_MESSAGE': string;
-	  'IM_A_TEAPOT': number;
+	  readonly '418': string;
+	  readonly '418_NAME': string;
+	  readonly '418_MESSAGE': string;
+	  readonly 'IM_A_TEAPOT': number;
 
-	  '421': string;
-	  '421_NAME': string;
-	  '421_MESSAGE': string;
-	  'MISDIRECTED_REQUEST': number;
+	  readonly '421': string;
+	  readonly '421_NAME': string;
+	  readonly '421_MESSAGE': string;
+	  readonly 'MISDIRECTED_REQUEST': number;
 
-	  '422': string;
-	  '422_NAME': string;
-	  '422_MESSAGE': string;
-	  'UNPROCESSABLE_ENTITY': number;
+	  readonly '422': string;
+	  readonly '422_NAME': string;
+	  readonly '422_MESSAGE': string;
+	  readonly 'UNPROCESSABLE_ENTITY': number;
 
-	  '423': string;
-	  '423_NAME': string;
-	  '423_MESSAGE': string;
-	  'LOCKED': number;
+	  readonly '423': string;
+	  readonly '423_NAME': string;
+	  readonly '423_MESSAGE': string;
+	  readonly 'LOCKED': number;
 
-	  '424': string;
-	  '424_NAME': string;
-	  '424_MESSAGE': string;
-	  'FAILED_DEPENDENCY': number;
+	  readonly '424': string;
+	  readonly '424_NAME': string;
+	  readonly '424_MESSAGE': string;
+	  readonly 'FAILED_DEPENDENCY': number;
 
-	  '426': string;
-	  '426_NAME': string;
-	  '426_MESSAGE': string;
-	  'UPGRADE_REQUIRED': number;
+	  readonly '426': string;
+	  readonly '426_NAME': string;
+	  readonly '426_MESSAGE': string;
+	  readonly 'UPGRADE_REQUIRED': number;
 
-	  '428': string;
-	  '428_NAME': string;
-	  '428_MESSAGE': string;
-	  'PRECONDITION_REQUIRED': number;
+	  readonly '428': string;
+	  readonly '428_NAME': string;
+	  readonly '428_MESSAGE': string;
+	  readonly 'PRECONDITION_REQUIRED': number;
 
-	  '429': string;
-	  '429_NAME': string;
-	  '429_MESSAGE': string;
-	  'TOO_MANY_REQUESTS': number;
+	  readonly '429': string;
+	  readonly '429_NAME': string;
+	  readonly '429_MESSAGE': string;
+	  readonly 'TOO_MANY_REQUESTS': number;
 
-	  '431': string;
-	  '431_NAME': string;
-	  '431_MESSAGE': string;
-	  'REQUEST_HEADER_FIELDS_TOO_LARGE': number;
+	  readonly '431': string;
+	  readonly '431_NAME': string;
+	  readonly '431_MESSAGE': string;
+	  readonly 'REQUEST_HEADER_FIELDS_TOO_LARGE': number;
 
-	  '451': string;
-	  '451_NAME': string;
-	  '451_MESSAGE': string;
-	  'UNAVAILABLE_FOR_LEGAL_REASONS': number;
+	  readonly '451': string;
+	  readonly '451_NAME': string;
+	  readonly '451_MESSAGE': string;
+	  readonly 'UNAVAILABLE_FOR_LEGAL_REASONS': number;
 
-	  '500': string;
-	  '500_NAME': string;
-	  '500_MESSAGE': string;
-	  'INTERNAL_SERVER_ERROR': number;
+	  readonly '500': string;
+	  readonly '500_NAME': string;
+	  readonly '500_MESSAGE': string;
+	  readonly 'INTERNAL_SERVER_ERROR': number;
 
-	  '501': string;
-	  '501_NAME': string;
-	  '501_MESSAGE': string;
-	  'NOT_IMPLEMENTED': number;
+	  readonly '501': string;
+	  readonly '501_NAME': string;
+	  readonly '501_MESSAGE': string;
+	  readonly 'NOT_IMPLEMENTED': number;
 
-	  '502': string;
-	  '_NAME': string;
-	  '_MESSAGE': string;
-	  'BAD_GATEWAY': number;
+	  readonly '502': string;
+	  readonly '_NAME': string;
+	  readonly '_MESSAGE': string;
+	  readonly 'BAD_GATEWAY': number;
 
-	  '503': string;
-	  '503_NAME': string;
-	  '503_MESSAGE': string;
-	  'SERVICE_UNAVAILABLE': number;
+	  readonly '503': string;
+	  readonly '503_NAME': string;
+	  readonly '503_MESSAGE': string;
+	  readonly 'SERVICE_UNAVAILABLE': number;
 
-	  '504': string;
-	  '504_NAME': string;
-	  '504_MESSAGE': string;
-	  'GATEWAY_TIMEOUT': number;
+	  readonly '504': string;
+	  readonly '504_NAME': string;
+	  readonly '504_MESSAGE': string;
+	  readonly 'GATEWAY_TIMEOUT': number;
 
-	  '505': string;
-	  '505_NAME': string;
-	  '505_MESSAGE': string;
-	  'HTTP_VERSION_NOT_SUPPORTED': number;
+	  readonly '505': string;
+	  readonly '505_NAME': string;
+	  readonly '505_MESSAGE': string;
+	  readonly 'HTTP_VERSION_NOT_SUPPORTED': number;
 
-	  '506': string;
-	  '506_NAME': string;
-	  '506_MESSAGE': string;
-	  'VARIANT_ALSO_NEGOTIATES': number;
+	  readonly '506': string;
+	  readonly '506_NAME': string;
+	  readonly '506_MESSAGE': string;
+	  readonly 'VARIANT_ALSO_NEGOTIATES': number;
 
-	  '507': string;
-	  '507_NAME': string;
-	  '507_MESSAGE': string;
-	  'INSUFFICIENT_STORAGE': number;
+	  readonly '507': string;
+	  readonly '507_NAME': string;
+	  readonly '507_MESSAGE': string;
+	  readonly 'INSUFFICIENT_STORAGE': number;
 
-	  '508': string;
-	  '508_NAME': string;
-	  '508_MESSAGE': string;
-	  'LOOP_DETECTED': number;
+	  readonly '508': string;
+	  readonly '508_NAME': string;
+	  readonly '508_MESSAGE': string;
+	  readonly 'LOOP_DETECTED': number;
 
-	  '510': string;
-	  '510_NAME': string;
-	  '510_MESSAGE': string;
-	  'NOT_EXTENDED': number;
+	  readonly '510': string;
+	  readonly '510_NAME': string;
+	  readonly '510_MESSAGE': string;
+	  readonly 'NOT_EXTENDED': number;
 
-	  '511': string;
-	  '511_NAME': string;
-	  '511_MESSAGE': string;
-	  'NETWORK_AUTHENTICATION_REQUIRED': number;
+	  readonly '511': string;
+	  readonly '511_NAME': string;
+	  readonly '511_MESSAGE': string;
+	  readonly 'NETWORK_AUTHENTICATION_REQUIRED': number;
 		
 		extra: {
 			
@@ -324,142 +324,142 @@ declare namespace httpStatus {
 
 	interface HttpStatusUnofficial {
 		
-		'103': string;
-		'103_NAME': string;
-		'103_MESSAGE': string;
-		'CHECKPOINT': number;
+	  readonly '103': string;
+	  readonly '103_NAME': string;
+	  readonly '103_MESSAGE': string;
+	  readonly 'CHECKPOINT': number;
 		
-		'420': string;
-		'420_NAME': string;
-		'420_MESSAGE': string;
-		'ENHANCE_YOUR_CALM': number;
+	  readonly '420': string;
+	  readonly '420_NAME': string;
+	  readonly '420_MESSAGE': string;
+	  readonly 'ENHANCE_YOUR_CALM': number;
 		
-		'450': string;
-		'450_NAME': string;
-		'450_MESSAGE': string;
-		'BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS': number;
+	  readonly '450': string;
+	  readonly '450_NAME': string;
+	  readonly '450_MESSAGE': string;
+	  readonly 'BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS': number;
 		
-		'498': string;
-		'498_NAME': string;
-		'498_MESSAGE': string;
-		'INVALID_TOKEN': number;
+	  readonly '498': string;
+	  readonly '498_NAME': string;
+	  readonly '498_MESSAGE': string;
+	  readonly 'INVALID_TOKEN': number;
 		
-		'499': string;
-		'499_NAME': string;
-		'499_MESSAGE': string;
-		'TOKEN_REQUIRED': number;
+	  readonly '499': string;
+	  readonly '499_NAME': string;
+	  readonly '499_MESSAGE': string;
+	  readonly 'TOKEN_REQUIRED': number;
 		
-		'509': string;
-		'509_NAME': string;
-		'509_MESSAGE': string;
-		'BANDWIDTH_LIMIT_EXCEEDED': number;
+	  readonly '509': string;
+	  readonly '509_NAME': string;
+	  readonly '509_MESSAGE': string;
+	  readonly 'BANDWIDTH_LIMIT_EXCEEDED': number;
 		
-		'530': string;
-		'530_NAME': string;
-		'530_MESSAGE': string;
-		'SITE_IS_FROZEN': number;
+	  readonly '530': string;
+	  readonly '530_NAME': string;
+	  readonly '530_MESSAGE': string;
+	  readonly 'SITE_IS_FROZEN': number;
 		
-		'598': string;
-		'598_NAME': string;
-		'598_MESSAGE': string;
-		'NETWORK_READ_TIMEOUT_ERROR': number;
+	  readonly '598': string;
+	  readonly '598_NAME': string;
+	  readonly '598_MESSAGE': string;
+	  readonly 'NETWORK_READ_TIMEOUT_ERROR': number;
 		
 	}
 
 	interface HttpStatusIis {
 		
-		'440': string;
-		'440_NAME': string;
-		'440_MESSAGE': string;
-		'LOGIN_TIME_OUT': number;
+	  readonly '440': string;
+	  readonly '440_NAME': string;
+	  readonly '440_MESSAGE': string;
+	  readonly 'LOGIN_TIME_OUT': number;
 		
-		'449': string;
-		'449_NAME': string;
-		'449_MESSAGE': string;
-		'RETRY_WITH': number;
+	  readonly '449': string;
+	  readonly '449_NAME': string;
+	  readonly '449_MESSAGE': string;
+	  readonly 'RETRY_WITH': number;
 		
-		'451': string;
-		'451_NAME': string;
-		'451_MESSAGE': string;
-		'REDIRECT': number;
+	  readonly '451': string;
+	  readonly '451_NAME': string;
+	  readonly '451_MESSAGE': string;
+	  readonly 'REDIRECT': number;
 		
 	}
 
 	interface HttpStatusNginx {
 
-		'444': string;
-		'444_NAME': string;
-		'444_MESSAGE': string;
-		'NO_RESPONSE': number;
+	  readonly '444': string;
+	  readonly '444_NAME': string;
+	  readonly '444_MESSAGE': string;
+	  readonly 'NO_RESPONSE': number;
 
-		'494': string;
-		'494_NAME': string;
-		'494_MESSAGE': string;
-		'REQUEST_HEADER_TOO_LARGE': number;
+	  readonly '494': string;
+	  readonly '494_NAME': string;
+	  readonly '494_MESSAGE': string;
+	  readonly 'REQUEST_HEADER_TOO_LARGE': number;
 
-		'495': string;
-		'495_NAME': string;
-		'495_MESSAGE': string;
-		'SSL_CERTIFICATE_ERROR': number;
+	  readonly '495': string;
+	  readonly '495_NAME': string;
+	  readonly '495_MESSAGE': string;
+	  readonly 'SSL_CERTIFICATE_ERROR': number;
 
-		'496': string;
-		'496_NAME': string;
-		'496_MESSAGE': string;
-		'SSL_CERTIFICATE_REQUIRED': number;
+	  readonly '496': string;
+	  readonly '496_NAME': string;
+	  readonly '496_MESSAGE': string;
+	  readonly 'SSL_CERTIFICATE_REQUIRED': number;
 
-		'497': string;
-		'497_NAME': string;
-		'497_MESSAGE': string;
-		'HTTP_REQUEST_SENT_TO_HTTPS_PORT': number;
+	  readonly '497': string;
+	  readonly '497_NAME': string;
+	  readonly '497_MESSAGE': string;
+	  readonly 'HTTP_REQUEST_SENT_TO_HTTPS_PORT': number;
 
-		'499': string;
-		'499_NAME': string;
-		'499_MESSAGE': string;
-		'CLIENT_CLOSED_REQUEST': number;
+	  readonly '499': string;
+	  readonly '499_NAME': string;
+	  readonly '499_MESSAGE': string;
+	  readonly 'CLIENT_CLOSED_REQUEST': number;
 		
 	}
 
 	interface HttpStatusCloudfare {
 
-		'520': string;
-		'520_NAME': string;
-		'520_MESSAGE': string;
-		'UNKNOWN_ERROR': number;
+	  readonly '520': string;
+	  readonly '520_NAME': string;
+	  readonly '520_MESSAGE': string;
+	  readonly 'UNKNOWN_ERROR': number;
 
-		'521': string;
-		'521_NAME': string;
-		'521_MESSAGE': string;
-		'WEB_SERVER_IS_DOWN': number;
+	  readonly '521': string;
+	  readonly '521_NAME': string;
+	  readonly '521_MESSAGE': string;
+	  readonly 'WEB_SERVER_IS_DOWN': number;
 
-		'522': string;
-		'522_NAME': string;
-		'522_MESSAGE': string;
-		'CONNECTION_TIMED_OUT': number;
+	  readonly '522': string;
+	  readonly '522_NAME': string;
+	  readonly '522_MESSAGE': string;
+	  readonly 'CONNECTION_TIMED_OUT': number;
 
-		'523': string;
-		'523_NAME': string;
-		'523_MESSAGE': string;
-		'ORIGIN_IS_UNREACHABLE': number;
+	  readonly '523': string;
+	  readonly '523_NAME': string;
+	  readonly '523_MESSAGE': string;
+	  readonly 'ORIGIN_IS_UNREACHABLE': number;
 
-		'524': string;
-		'524_NAME': string;
-		'524_MESSAGE': string;
-		'A_TIMEOUT_OCCURRED': number;
+	  readonly '524': string;
+	  readonly '524_NAME': string;
+	  readonly '524_MESSAGE': string;
+	  readonly 'A_TIMEOUT_OCCURRED': number;
 
-		'525': string;
-		'525_NAME': string;
-		'525_MESSAGE': string;
-		'SSL_HANDSHAKE_FAILED': number;
+	  readonly '525': string;
+	  readonly '525_NAME': string;
+	  readonly '525_MESSAGE': string;
+	  readonly 'SSL_HANDSHAKE_FAILED': number;
 
-		'526': string;
-		'526_NAME': string;
-		'526_MESSAGE': string;
-		'INVALID_SSL_CERTIFICATE': number;
+	  readonly '526': string;
+	  readonly '526_NAME': string;
+	  readonly '526_MESSAGE': string;
+	  readonly 'INVALID_SSL_CERTIFICATE': number;
 
-		'527': string;
-		'527_NAME': string;
-		'527_MESSAGE': string;
-		'RAILGUN_ERROR': number;
+	  readonly '527': string;
+	  readonly '527_NAME': string;
+	  readonly '527_MESSAGE': string;
+	  readonly 'RAILGUN_ERROR': number;
 		
 	}
 
