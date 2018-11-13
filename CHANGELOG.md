@@ -2,6 +2,7 @@
 
 ## Trunk
 
+* codes: new codes 102 and 103
 * ts: rewrite declaration type file
 * ts: mocha integration
 
