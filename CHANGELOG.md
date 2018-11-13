@@ -1,6 +1,6 @@
 # Changelog: HTTP Status
 
-## Trunk
+## Version 1.3.0
 
 * codes: new codes 102 and 103
 * ts: rewrite declaration type file
