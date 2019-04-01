@@ -1,6 +1,6 @@
 # Changelog: HTTP Status
 
-## Trunk
+## Version 1.3.2
 
 * 502: wrong key for name and message
 
