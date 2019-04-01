@@ -1,5 +1,9 @@
 # Changelog: HTTP Status
 
+## Trunk
+
+* 502: wrong key for name and message
+
 ## Version 1.3.1
 
 * ts: define properties as readonly

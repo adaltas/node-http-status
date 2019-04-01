@@ -400,8 +400,8 @@ The server failed to fulfill an apparently valid request.
 502 - The server was acting as a gateway or proxy and received an invalid response from the upstream server.
 
     502: 'Bad Gateway'
-    '_NAME': 'BAD_GATEWAY'
-    '_MESSAGE': 'The server was acting as a gateway or proxy and received an invalid response from the upstream server.'
+    '502_NAME': 'BAD_GATEWAY'
+    '502_MESSAGE': 'The server was acting as a gateway or proxy and received an invalid response from the upstream server.'
     BAD_GATEWAY: 502
 
 503 - The server is currently unavailable (because it is overloaded or down for maintenance). Generally, this is a temporary state.
