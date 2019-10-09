@@ -1,7 +1,6 @@
+# Cloudfare extra status codes
 
-# Cloudfare extra status code
-
-Cloudflare's reverse proxy service expands the 5xx series of errors space to signal issues with the origin server.
+Cloudflare's reverse proxy service expands the 5xx error class to signal issues with the origin server.
 
     status = require '.'
 

@@ -1,17 +1,17 @@
-var express = require('express'),
-    redis = require('redis'),
-    HTTPStatus = require('http-status');
-
-var app = express.createServer();
-
-app.get('/', function (req, res) {
-    var client = redis.createClient();
-    client.ping(function (err, msg) {
-        if (err) {
-            return res.send(HTTPStatus.INTERNAL_SERVER_ERROR);
-        }
-        res.send(msg, HTTPStatus.OK);
-    });
+const express = require('express'),
+      redis   = require('redis'),
+      status  = require('http-status');
+// New Express HTTP server
+const app = express.createServer();
+// Regster a route
+app.get('/', (req, res) => {
+  const client = redis.createClient();
+  client.ping((err, msg) => {
+    if (err) {
+      return res.send(status.INTERNAL_SERVER_ERROR);
+    }
+    res.send(msg, status.OK);
+  });
 });
-
+// Start the HTTP server
 app.listen(3000);

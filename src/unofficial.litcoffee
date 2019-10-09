@@ -1,5 +1,4 @@
-
-# Unofficial extra status code
+# Unofficial extra status codes
 
 This represent a list of codes which are not specified by any standard.
 

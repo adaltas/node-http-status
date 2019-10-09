@@ -1,8 +1,14 @@
-
 import 'should'
 import * as status from '../lib/index'
 
-import {HttpStatus, HttpStatusUnofficial, HttpStatusIis, HttpStatusNginx, HttpStatusCloudfare} from '../lib/index'
+import {
+  HttpStatus,
+  HttpStatusClasses,
+  HttpStatusUnofficial,
+  HttpStatusIis,
+  HttpStatusNginx,
+  HttpStatusCloudfare
+} from '../lib/index'
 
 describe('Types', () => {
 
@@ -11,21 +17,25 @@ describe('Types', () => {
     it('first level properties', () => {
       const number: number = status.CONTINUE
       const code: string = status[number]
-      code.should.eql('CONTINUE')
-      const name: string = status[number + '_NAME']
+      code.should.eql('Continue')
+      const name: string = status[`${number}_NAME`]
       name.should.eql('CONTINUE')
-      const message: string = status[number + '_MESSAGE']
-      message.should.eql('CONTINUE')
+      const message: string = status[`${number}_MESSAGE`]
+      message.should.eql('The server has received the request headers and the client should proceed to send the request body.')
+      const clazz: string = status[`${number}_CLASS`]
+      clazz.should.eql('1xx')
     })
 
     it('sub level properties', () => {
       const number: number = status.extra.nginx.NO_RESPONSE
-      const code: string = status[number]
+      const code: string = status.extra.nginx[number]
       code.should.eql('No Response')
-      const name: string = status[number + '_NAME']
+      const name: string = status.extra.nginx[`${number}_NAME`]
       name.should.eql('NO_RESPONSE')
-      const message: string = status[number + '_MESSAGE']
+      const message: string = status.extra.nginx[`${number}_MESSAGE`]
       message.should.eql('Used internally to instruct the server to return no information to the client and close the connection immediately.')
+      const clazz: string = status.extra.nginx[`${number}_CLASS`]
+      clazz.should.eql('4xx')
     })
 
   })
@@ -33,8 +43,13 @@ describe('Types', () => {
   describe('ES6 exports', () => {
 
     it('HttpStatus', () => {
-      const unofficial: HttpStatus = status
-      unofficial.CONTINUE.should.be.a.Number()
+      const statuses: HttpStatus = status
+      statuses.CONTINUE.should.be.a.Number()
+    })
+
+    it('HttpStatusClasses', () => {
+      const classes: HttpStatusClasses = status.classes
+      classes.INFORMATIONAL.should.be.a.String()
     })
 
     it('HttpStatusUnofficial', () => {

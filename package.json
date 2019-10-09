@@ -52,6 +52,6 @@
     "major": "npm version major -m 'Bump to version %s'",
     "coffee": "coffee -b -o lib src",
     "pretest": "coffee -b -o lib src && cp src/index.d.ts lib",
-    "test": "mocha test/**/*.coffee"
+    "test": "mocha \"test/**/*.{coffee,ts}\""
   }
 }

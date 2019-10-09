@@ -1,7 +1,6 @@
+# NGINX extra status codes
 
-# NGINX extra status code
-
-The NGINX web server software expands the 4xx error space to signal issues with the client's request.
+The NGINX web server software expands the 4xx error class to signal issues with the client's request.
 
     status = require '.'
 
