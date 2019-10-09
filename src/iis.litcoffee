@@ -1,7 +1,6 @@
+# IIS extra status codes
 
-# IIS extra status code
-
-Microsoft's Internet Information Services (IIS) web server expands the 4xx error space to signal errors with the client's request.
+Microsoft's Internet Information Services (IIS) web server expands the 4xx error class to signal errors with the client's request.
 
     status = require '.'
 
