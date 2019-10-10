@@ -1,5 +1,9 @@
 # Changelog: HTTP Status
 
+## Trunk
+
+* codes: add status code classes
+
 ## Version 1.3.2
 
 * 502: wrong key for name and message
