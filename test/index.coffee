@@ -6,7 +6,7 @@ nginx = require '../src/nginx'
 unofficial = require '../src/unofficial'
 
 getDigit = (ntn, number) ->
-  Math.floor number / 10 ** ntn % 10
+  Math.floor number / Math.pow(10, ntn) % 10
 
 describe 'HTTP Status Codes', ->
 
