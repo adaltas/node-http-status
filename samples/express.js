@@ -1,6 +1,6 @@
 const express = require('express'),
       redis   = require('redis'),
-      status  = require('http-status');
+      status  = require('..');
 // New Express HTTP server
 const app = express.createServer();
 // Regster a route

@@ -101,8 +101,8 @@ console.info(status[500]);
 console.info(status[status.INTERNAL_SERVER_ERROR]);
 // Both output: "Internal Server Error"
 
-console.info(status['500_CODE']);
-console.info(status[`${status.INTERNAL_SERVER_ERROR}_CODE`]);
+console.info(status['500_NAME']);
+console.info(status[`${status.INTERNAL_SERVER_ERROR}_NAME`]);
 // Both output: "INTERNAL_SERVER_ERROR"
 
 console.info(status['500_MESSAGE']);

@@ -1,5 +1,9 @@
 # Changelog: HTTP Status
 
+## Trunk
+
+* readme: fix api example
+
 ## Version 1.4.0
 
 * codes: add status code classes
