@@ -1,9 +1,9 @@
 {
   "name": "http-status",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Interact with HTTP status code",
   "homepage": "https://github.com/adaltas/node-http-status",
-  "author": "David Worms <david@adaltas.com>",
+  "author": "David Worms <david@adaltas.com> (https://www.adaltas.com)",
   "keywords": [
     "http",
     "express",
@@ -14,7 +14,6 @@
     "type": "git",
     "url": "https://github.com/adaltas/node-http-status"
   },
-  "author": "David Worms <david@adaltas.com> (https://www.adaltas.com)",
   "bugs": {
     "email": "open@adaltas.com",
     "url": "http://github.com/adaltas/node-http-status/issues"

@@ -1,6 +1,6 @@
 # Changelog: HTTP Status
 
-## Trunk
+## Version 1.4.2
 
 * package: update adaltas url
 
