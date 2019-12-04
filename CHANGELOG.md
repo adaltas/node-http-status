@@ -1,5 +1,9 @@
 # Changelog: HTTP Status
 
+## Trunk
+
+* package: update adaltas url
+
 ## Version 1.4.1
 
 * readme: fix api example
