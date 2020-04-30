@@ -5,7 +5,8 @@ declare const httpStatus: httpStatus.HttpStatus;
 declare namespace httpStatus {
 	
 	interface HttpStatus {
-		
+		readonly [key:string]: string | number;
+
 	  readonly '100': string;
 	  readonly '100_NAME': string;
 	  readonly '100_MESSAGE': string;
@@ -383,6 +384,7 @@ declare namespace httpStatus {
 	}
 
 	interface HttpStatusClasses {
+		readonly [key:string]: string | number;
 
 	  readonly '1xx': string;
 	  readonly '1xx_NAME': string;
@@ -412,7 +414,8 @@ declare namespace httpStatus {
 	}
 
 	interface HttpStatusUnofficial {
-		
+		readonly [key:string]: string | number;
+
 	  readonly '103': string;
 	  readonly '103_NAME': string;
 	  readonly '103_MESSAGE': string;
@@ -464,7 +467,8 @@ declare namespace httpStatus {
 	}
 
 	interface HttpStatusIis {
-		
+		readonly [key:string]: string | number;
+
 	  readonly '440': string;
 	  readonly '440_NAME': string;
 	  readonly '440_MESSAGE': string;
@@ -486,6 +490,7 @@ declare namespace httpStatus {
 	}
 
 	interface HttpStatusNginx {
+		readonly [key:string]: string | number;
 
 	  readonly '444': string;
 	  readonly '444_NAME': string;
@@ -526,6 +531,7 @@ declare namespace httpStatus {
 	}
 
 	interface HttpStatusCloudfare {
+		readonly [key:string]: string | number;
 
 	  readonly '520': string;
 	  readonly '520_NAME': string;
