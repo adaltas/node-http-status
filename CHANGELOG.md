@@ -1,5 +1,9 @@
 # Changelog: HTTP Status
 
+## Trunk
+
+* package: update travis with node.js 12 and 14
+
 ## Version 1.5.0
 
 * ts: support strict mode
