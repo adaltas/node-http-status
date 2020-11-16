@@ -2,6 +2,7 @@
 
 ## Trunk
 
+* mocha: move config into package
 * package: latest dependencies
 
 ## Version 1.4.2

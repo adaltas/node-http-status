@@ -51,6 +51,18 @@
       "email": "daniel@gasienica.ch"
     }
   ],
+  "mocha": {
+    "throw-deprecation": true,
+    "require": [
+      "should",
+      "coffeescript/register",
+      "ts-node/register"
+    ],
+    "inline-diffs": true,
+    "timeout": 40000,
+    "reporter": "spec",
+    "recursive": true
+  },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "engines": {
