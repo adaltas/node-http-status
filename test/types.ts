@@ -1,8 +1,6 @@
-import * as should from 'should'
-import * as status from '../lib/index'
 
-// Fix waring "'should' is declared but its value is never read."
-should.exist(true)
+import 'should'
+import * as status from '../lib/index'
 
 import {
   HttpStatus,
