@@ -1,6 +1,6 @@
 # Changelog: HTTP Status
 
-## Trunk
+## Version 1.5.0
 
 * ts: support strict mode
 * mocha: move config into package
