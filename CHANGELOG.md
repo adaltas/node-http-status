@@ -2,6 +2,7 @@
 
 ## Trunk
 
+* ts: support strict mode
 * mocha: move config into package
 * package: latest dependencies
 
