@@ -187,3 +187,17 @@ app.listen(3000);
 - James Barcellano: <https://github.com/ckeboss>
 
 This package is developed by [Adaltas](http://www.adaltas.com).
+
+## Developers
+
+To automatically generate a new version:
+
+```
+yarn run release
+```
+
+There is currently no CI, copy/paste the code after release. Note, commits and tags are automatically pushed before publishing.
+
+```
+npm publish
+```
