@@ -1,3 +1,14 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [1.5.1](https://github.com/adaltas/node-http-status/compare/v1.5.0...v1.5.1) (2022-04-14)
+
+
+### Bug Fixes
+
+* **types:** 502 is missing _NAME, _MESSAGE, _CLASS ([b86e714](https://github.com/adaltas/node-http-status/commit/b86e714db1ef41c0e841c9c96096d0288378d048))
+
 
 ## Version 1.5.0
 
