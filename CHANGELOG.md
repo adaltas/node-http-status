@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.2](https://github.com/adaltas/node-http-status/compare/v1.5.1...v1.5.2) (2022-05-06)
+
+
+### Bug Fixes
+
+* types on 502 status ([1f0b681](https://github.com/adaltas/node-http-status/commit/1f0b681e021d3f77e1594dd1329a178f6905ebe7))
+
 ### [1.5.1](https://github.com/adaltas/node-http-status/compare/v1.5.0...v1.5.1) (2022-04-14)
 
 
