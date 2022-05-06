@@ -314,9 +314,9 @@ declare namespace httpStatus {
 	  readonly 'NOT_IMPLEMENTED': number;
 
 	  readonly '502': string;
-	  readonly '_NAME': string;
-	  readonly '_MESSAGE': string;
-	  readonly '_CLASS': string;
+	  readonly '502_NAME': string;
+	  readonly '502_MESSAGE': string;
+	  readonly '502_CLASS': string;
 	  readonly 'BAD_GATEWAY': number;
 
 	  readonly '503': string;
