@@ -4,6 +4,8 @@ declare const httpStatus: httpStatus.HttpStatus;
 
 declare namespace httpStatus {
   interface HttpStatus {
+    readonly [key: number]: string
+
     readonly [key: string]:
       | string
       | number
