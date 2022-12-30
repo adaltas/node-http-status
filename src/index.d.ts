@@ -419,164 +419,164 @@ declare namespace httpStatus {
   interface HttpStatusUnofficial {
     readonly [key: string]: string | number;
 
-    readonly '103': string;
+    readonly 103: string;
     readonly '103_NAME': string;
     readonly '103_MESSAGE': string;
     readonly '103_CLASS': string;
-    readonly CHECKPOINT: number;
+    readonly CHECKPOINT: 103;
 
-    readonly '420': string;
+    readonly 420: string;
     readonly '420_NAME': string;
     readonly '420_MESSAGE': string;
     readonly '420_CLASS': string;
-    readonly ENHANCE_YOUR_CALM: number;
+    readonly ENHANCE_YOUR_CALM: 420;
 
-    readonly '450': string;
+    readonly 450: string;
     readonly '450_NAME': string;
     readonly '450_MESSAGE': string;
     readonly '450_CLASS': string;
-    readonly BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS: number;
+    readonly BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS: 450;
 
-    readonly '498': string;
+    readonly 498: string;
     readonly '498_NAME': string;
     readonly '498_MESSAGE': string;
     readonly '498_CLASS': string;
-    readonly INVALID_TOKEN: number;
+    readonly INVALID_TOKEN: 498;
 
-    readonly '499': string;
+    readonly 499: string;
     readonly '499_NAME': string;
     readonly '499_MESSAGE': string;
     readonly '499_CLASS': string;
-    readonly TOKEN_REQUIRED: number;
+    readonly TOKEN_REQUIRED: 499;
 
-    readonly '509': string;
+    readonly 509: string;
     readonly '509_NAME': string;
     readonly '509_MESSAGE': string;
     readonly '509_CLASS': string;
-    readonly BANDWIDTH_LIMIT_EXCEEDED: number;
+    readonly BANDWIDTH_LIMIT_EXCEEDED: 509;
 
-    readonly '530': string;
+    readonly 530: string;
     readonly '530_NAME': string;
     readonly '530_MESSAGE': string;
     readonly '530_CLASS': string;
-    readonly SITE_IS_FROZEN: number;
+    readonly SITE_IS_FROZEN: 530;
 
-    readonly '598': string;
+    readonly 598: string;
     readonly '598_NAME': string;
     readonly '598_MESSAGE': string;
     readonly '598_CLASS': string;
-    readonly NETWORK_READ_TIMEOUT_ERROR: number;
+    readonly NETWORK_READ_TIMEOUT_ERROR: 598;
   }
 
   interface HttpStatusIis {
     readonly [key: string]: string | number;
 
-    readonly '440': string;
+    readonly 440: string;
     readonly '440_NAME': string;
     readonly '440_MESSAGE': string;
     readonly '440_CLASS': string;
-    readonly LOGIN_TIME_OUT: number;
+    readonly LOGIN_TIME_OUT: 440;
 
-    readonly '449': string;
+    readonly 449: string;
     readonly '449_NAME': string;
     readonly '449_MESSAGE': string;
     readonly '449_CLASS': string;
-    readonly RETRY_WITH: number;
+    readonly RETRY_WITH: 449;
 
-    readonly '451': string;
+    readonly 451: string;
     readonly '451_NAME': string;
     readonly '451_MESSAGE': string;
     readonly '451_CLASS': string;
-    readonly REDIRECT: number;
+    readonly REDIRECT: 451;
   }
 
   interface HttpStatusNginx {
     readonly [key: string]: string | number;
 
-    readonly '444': string;
+    readonly 444: string;
     readonly '444_NAME': string;
     readonly '444_MESSAGE': string;
     readonly '444_CLASS': string;
-    readonly NO_RESPONSE: number;
+    readonly NO_RESPONSE: 444;
 
-    readonly '494': string;
+    readonly 494: string;
     readonly '494_NAME': string;
     readonly '494_MESSAGE': string;
     readonly '494_CLASS': string;
-    readonly REQUEST_HEADER_TOO_LARGE: number;
+    readonly REQUEST_HEADER_TOO_LARGE: 494;
 
-    readonly '495': string;
+    readonly 495: string;
     readonly '495_NAME': string;
     readonly '495_MESSAGE': string;
     readonly '495_CLASS': string;
-    readonly SSL_CERTIFICATE_ERROR: number;
+    readonly SSL_CERTIFICATE_ERROR: 495;
 
-    readonly '496': string;
+    readonly 496: string;
     readonly '496_NAME': string;
     readonly '496_MESSAGE': string;
     readonly '496_CLASS': string;
-    readonly SSL_CERTIFICATE_REQUIRED: number;
+    readonly SSL_CERTIFICATE_REQUIRED: 496;
 
-    readonly '497': string;
+    readonly 497: string;
     readonly '497_NAME': string;
     readonly '497_MESSAGE': string;
     readonly '497_CLASS': string;
-    readonly HTTP_REQUEST_SENT_TO_HTTPS_PORT: number;
+    readonly HTTP_REQUEST_SENT_TO_HTTPS_PORT: 497;
 
-    readonly '499': string;
+    readonly 499: string;
     readonly '499_NAME': string;
     readonly '499_MESSAGE': string;
     readonly '499_CLASS': string;
-    readonly CLIENT_CLOSED_REQUEST: number;
+    readonly CLIENT_CLOSED_REQUEST: 499;
   }
 
   interface HttpStatusCloudfare {
-    readonly '520': string;
+    readonly 520: string;
     readonly '520_NAME': string;
     readonly '520_MESSAGE': string;
     readonly '520_CLASS': string;
-    readonly UNKNOWN_ERROR: number;
+    readonly UNKNOWN_ERROR: 520;
 
-    readonly '521': string;
+    readonly 521: string;
     readonly '521_NAME': string;
     readonly '521_MESSAGE': string;
     readonly '521_CLASS': string;
-    readonly WEB_SERVER_IS_DOWN: number;
+    readonly WEB_SERVER_IS_DOWN: 521;
 
-    readonly '522': string;
+    readonly 522: string;
     readonly '522_NAME': string;
     readonly '522_MESSAGE': string;
     readonly '522_CLASS': string;
-    readonly CONNECTION_TIMED_OUT: number;
+    readonly CONNECTION_TIMED_OUT: 522;
 
-    readonly '523': string;
+    readonly 523: string;
     readonly '523_NAME': string;
     readonly '523_MESSAGE': string;
     readonly '523_CLASS': string;
-    readonly ORIGIN_IS_UNREACHABLE: number;
+    readonly ORIGIN_IS_UNREACHABLE: 523;
 
-    readonly '524': string;
+    readonly 524: string;
     readonly '524_NAME': string;
     readonly '524_MESSAGE': string;
     readonly '524_CLASS': string;
-    readonly A_TIMEOUT_OCCURRED: number;
+    readonly A_TIMEOUT_OCCURRED: 524;
 
-    readonly '525': string;
+    readonly 525: string;
     readonly '525_NAME': string;
     readonly '525_MESSAGE': string;
     readonly '525_CLASS': string;
-    readonly SSL_HANDSHAKE_FAILED: number;
+    readonly SSL_HANDSHAKE_FAILED: 525;
 
-    readonly '526': string;
+    readonly 526: string;
     readonly '526_NAME': string;
     readonly '526_MESSAGE': string;
     readonly '526_CLASS': string;
-    readonly INVALID_SSL_CERTIFICATE: number;
+    readonly INVALID_SSL_CERTIFICATE: 526;
 
-    readonly '527': string;
+    readonly 527: string;
     readonly '527_NAME': string;
     readonly '527_MESSAGE': string;
     readonly '527_CLASS': string;
-    readonly RAILGUN_ERROR: number;
+    readonly RAILGUN_ERROR: 527;
   }
 }
