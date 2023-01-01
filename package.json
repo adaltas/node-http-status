@@ -60,7 +60,7 @@
     "throw-deprecation": true,
     "require": [
       "should",
-      "coffeescript/register",
+      "coffeescript/register.js",
       "ts-node/register"
     ],
     "inline-diffs": true,
