@@ -9,6 +9,7 @@ Utility to interact with HTTP status codes.
 Once you require this module, you may call it with either an HTTP code or a message name. With an HTTP code, you will get the message name while with a message name you will get an HTTP code.
 
 ### HTTP Status Codes
+
 HTTP code names, messages, and classes are respectively accessible with the property `{code}_NAME`, `{code}_MESSAGE` and `{code}_CLASS`. This includes all statuses in the [IANA HTTP Status Code Registry](https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml), with the only addition being `418 I'm a teapot`.
 
 Extra status code are also made available that are not defined in the IANA registry, but used by popular software. They are grouped by category. Specific properties are exported by `http-status` under the property `extra` followed by the category name. Also, extra codes are merge with regular status codes and made available as modules available inside `http-status/lib/{category}`.
@@ -194,10 +195,9 @@ To automatically generate a new version:
 
 ```
 yarn run release
-```
-
-There is currently no CI, copy/paste the code after release. Note, commits and tags are automatically pushed before publishing.
 
 ```
-npm publish
-```
+
+Package publication is handled by the CI/CD with GitHub action.
+
+Note, on release, both the publish and test workflows run in parallel. Not very happy about it but I haven't found a better way.
