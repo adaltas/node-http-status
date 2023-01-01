@@ -74,10 +74,8 @@
     "node": ">= 0.4.0"
   },
   "scripts": {
-    "__postversion": "git push origin master && git push origin master --tags && npm publish",
     "build": "coffee -b -o lib src && cp src/index.d.ts lib",
     "prepare": "husky install",
-    "prepublishOnly": "git push --follow-tags origin master",
     "pretest": "npm run build",
     "release": "standard-version",
     "postrelease": "git push --follow-tags origin master",
