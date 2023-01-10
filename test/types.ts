@@ -26,7 +26,13 @@ describe('Types', () => {
       const clazz: string = status[`${number}_CLASS`] as string
       clazz.should.eql('1xx')
     })
-  
+
+    it('undefined status codes', () => {
+      const undefinedStatusCode = 777
+      const code: string = typeof status[undefinedStatusCode]
+      code.should.eql('undefined')
+    })
+
     it('sub level properties', () => {
       const number: number = status.extra.nginx.NO_RESPONSE
       const code: string = status.extra.nginx[number] as string
@@ -38,41 +44,41 @@ describe('Types', () => {
       const clazz: string = status.extra.nginx[`${number}_CLASS`] as string
       clazz.should.eql('4xx')
     })
-  
+
   })
-  
+
   describe('ES6 exports', () => {
-  
+
     it('HttpStatus', () => {
       const statuses: HttpStatus = status
       statuses.CONTINUE.should.be.a.Number()
     })
-  
+
     it('HttpStatusClasses', () => {
       const classes: HttpStatusClasses = status.classes
       classes.INFORMATIONAL.should.be.a.String()
     })
-  
+
     it('HttpStatusUnofficial', () => {
       const unofficial: HttpStatusUnofficial = status.extra.unofficial
       unofficial.CHECKPOINT.should.be.a.Number()
     })
-  
+
     it('HttpStatusIis', () => {
       const iis: HttpStatusIis = status.extra.iis
       iis.LOGIN_TIME_OUT.should.be.a.Number()
     })
-  
+
     it('HttpStatusNginx', () => {
       const nginx: HttpStatusNginx = status.extra.nginx
       nginx.NO_RESPONSE.should.be.a.Number()
     })
-  
+
     it('HttpStatusCloudfare', () => {
       const cloudflare: HttpStatusCloudfare = status.extra.cloudflare
       cloudflare.UNKNOWN_ERROR.should.be.a.Number()
     })
-  
+
   })
 
 })
