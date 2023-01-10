@@ -194,7 +194,9 @@ This package is developed by [Adaltas](http://www.adaltas.com).
 To automatically generate a new version:
 
 ```
+rm package-lock.json
 yarn run release
+git push --follow-tags origin master
 ```
 
 Package publication is handled by the CI/CD with GitHub action.
