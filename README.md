@@ -187,7 +187,7 @@ app.listen(3000);
 - Paul Vollmer: <paul.vollmer@fh-potsdam.de>
 - James Barcellano: <https://github.com/ckeboss>
 
-This package is developed by [Adaltas](http://www.adaltas.com).
+This package is developed by [Adaltas](https://www.adaltas.com).
 
 ## Developers
 
