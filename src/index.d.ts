@@ -277,6 +277,12 @@ declare namespace httpStatus {
     readonly '424_CLASS': string;
     readonly FAILED_DEPENDENCY: 424;
 
+    readonly 425: string;
+    readonly '425_NAME': string;
+    readonly '425_MESSAGE': string;
+    readonly '425_CLASS': string;
+    readonly TOO_EARLY: 425;
+
     readonly 426: string;
     readonly '426_NAME': string;
     readonly '426_MESSAGE': string;
