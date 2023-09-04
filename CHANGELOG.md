@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/adaltas/node-http-status/compare/v1.6.2...v1.7.0) (2023-09-04)
+
+
+### Features
+
+* 425 Too Early ([#46](https://github.com/adaltas/node-http-status/issues/46)) ([3247afe](https://github.com/adaltas/node-http-status/commit/3247afe9c5497d2b983e407b5051ae25a3f53387))
+
 ### [1.6.2](https://github.com/adaltas/node-http-status/compare/v1.6.1...v1.6.2) (2023-01-10)
 
 
