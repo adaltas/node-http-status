@@ -434,6 +434,14 @@ Indicates that the client seems to have erred.
     '424_CLASS': classes.CLIENT_ERROR
     FAILED_DEPENDENCY: 424
 
+425 (RFC 8470) - The server is unwilling to risk processing a request that might be replayed.
+
+    425: 'Too Early'
+    '425_NAME': 'TOO_EARLY'
+    '425_MESSAGE': 'The server is unwilling to risk processing a request that might be replayed.'
+    '425_CLASS': classes.CLIENT_ERROR
+    FAILED_DEPENDENCY: 425
+
 426 - The client should switch to a different protocol such as TLS/1.0, given in the Upgrade header field.
 
     426: 'Upgrade Required'
