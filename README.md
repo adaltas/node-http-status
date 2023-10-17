@@ -1,6 +1,6 @@
 [![Build Status](https://secure.travis-ci.org/adaltas/node-http-status.png)](http://travis-ci.org/adaltas/node-http-status)
 
-# HTTP Status codes for Node
+# HTTP Status codes for Node.js
 
 Utility to interact with HTTP status codes.
 
@@ -8,7 +8,7 @@ Utility to interact with HTTP status codes.
 
 Once you require this module, you may call it with either an HTTP code or a message name. With an HTTP code, you will get the message name while with a message name you will get an HTTP code.
 
-### HTTP Status Codes
+### HTTP Status codes
 
 HTTP code names, messages, and classes are respectively accessible with the property `{code}_NAME`, `{code}_MESSAGE` and `{code}_CLASS`. This includes all statuses in the [IANA HTTP Status Code Registry](https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml), with the only addition being `418 I'm a teapot`.
 
@@ -27,7 +27,7 @@ Available categories are:
   <dd>Cloudflare's reverse proxy service expands the 5xx error class to signal issues with the origin server.</dd>
 </dl>
 
-### HTTP Status Code Classes
+### HTTP Status code classes
 
 In addition to HTTP status codes, this module also contains status code classes under the `classes` property. Similar to HTTP codes, you can access class names and messages with the property `{class}_NAME` and `{class}_MESSAGE`
 
@@ -90,7 +90,7 @@ extra.
 
 For additional information, please refer to [original code](./src/index.litcoffee).
 
-### Example Usage
+### Example usage
 
 ```javascript
 const status = require('http-status');
@@ -145,7 +145,7 @@ switch (status[`${responseCode}_CLASS`]) {
 }
 ```
 
-### Example Using `extra` Property
+### Example using the `extra` property
 
 ```javascript
 // Accessing property from the NGINX category
@@ -157,7 +157,7 @@ console.info(status.IM_A_TEAPOT);
 console.info(status.NO_RESPONSE)
 ```
 
-### Express Example
+### Example integrating Express
 
 ```javascript
 const express = require('express'),
