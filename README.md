@@ -194,13 +194,7 @@ This package is developed by [Adaltas](https://www.adaltas.com).
 To automatically generate a new version:
 
 ```
-rm package-lock.json
 yarn run release
-git push --follow-tags origin master
 ```
 
 Package publication is handled by the CI/CD with GitHub action.
-
-Note:
-- On release, both the publish and test workflows run in parallel. Not very happy about it but I haven't found a better way.
-- `yarn` does not call the "postrelease" script and `npm` fails if the `package-lock.json` file is present and git ignored.
