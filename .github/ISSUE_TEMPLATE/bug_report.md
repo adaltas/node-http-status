@@ -8,13 +8,13 @@ assignees: ''
 
 **Describe the bug**
 
-A clear and concise description of what the bug is, the package version you are using.
+A clear and concise description of what the bug is, the `http-status` package version you are using.
 
 **To Reproduce**
 
-Please provide us with a unit test, an example code or even pseudo-code. It could be written in JavaScript or CoffeeScript, but not in TypeScript unless the bug is related to TypeScript.
+Please provide us with a unit test, an example code or even pseudo-code. It is written in JavaScript, but not in TypeScript unless the bug is related to TypeScript.
 
-What's important is to **limit the data** to the minimum as well as to **strip down the number of options** to the relevant ones with an impact. Do not reference an external file.
+What's important is to provide a **minimal code**, only focussing on the problem. Do not reference an external file.
 
 **Additional context**
 
