@@ -77,6 +77,7 @@
     "build": "coffee -b -o lib src && cp src/index.d.ts lib",
     "prepare": "husky install",
     "pretest": "npm run build",
+    "prerelease": "npm run build && git update-index --refresh && git diff-index --quiet HEAD --",
     "release": "standard-version",
     "postrelease": "git push --follow-tags origin master",
     "release:minor": "standard-version --release-as minor",
