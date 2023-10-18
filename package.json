@@ -79,10 +79,10 @@
     "pretest": "npm run build",
     "prerelease": "npm run build && git update-index --refresh && git diff-index --quiet HEAD --",
     "release": "standard-version",
-    "postrelease": "git push --follow-tags origin master",
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
     "release:major": "standard-version --release-as major",
+    "postrelease": "git push --follow-tags origin master",
     "test": "mocha \"test/**/*.{coffee,ts}\""
   }
 }

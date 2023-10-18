@@ -1,0 +1,33 @@
+name: Test
+on:
+  push:
+  pull_request:
+jobs:
+  is_release:
+    runs-on: ubuntu-latest
+    outputs:
+      type: ${{ steps.get_type.outputs.type }}
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: get_type
+        run: echo $( git tag --points-at HEAD | grep -q -e '^v' && echo 'type=::release::' || echo "type=::norelease::" ) >> "$GITHUB_OUTPUT"
+  test:
+    needs: [is_release]
+    if: ${{ needs.is_release.outputs.type == '::norelease::' }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x, 18.x, 20.x]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: yarn --frozen-lockfile
+      - run: yarn run test
