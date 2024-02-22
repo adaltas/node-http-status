@@ -29,12 +29,12 @@ describe('Types', () => {
 
     it('undefined status codes', () => {
       const undefinedStatusCode = 777
-      const code: string = typeof status[undefinedStatusCode]
+      const code: string = typeof (status as any)[undefinedStatusCode]
       code.should.eql('undefined')
     })
 
     it('sub level properties', () => {
-      const number: number = status.extra.nginx.NO_RESPONSE
+      const number: 444 = status.extra.nginx.NO_RESPONSE
       const code: string = status.extra.nginx[number] as string
       code.should.eql('No Response')
       const name: string = status.extra.nginx[`${number}_NAME`] as string
