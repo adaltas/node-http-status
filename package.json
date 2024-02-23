@@ -6,8 +6,10 @@
   "author": "David Worms <david@adaltas.com> (https://www.adaltas.com)",
   "keywords": [
     "http",
-    "express",
-    "connect"
+    "connect",
+    "frontend",
+    "status",
+    "express"
   ],
   "license": "BSD-3-Clause",
   "repository": {
