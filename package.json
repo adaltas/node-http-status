@@ -26,7 +26,6 @@
     "@types/mocha": "^9.1.1",
     "@types/node": "^18.7.15",
     "@types/should": "^13.0.0",
-    "coffeescript": "2.7.0",
     "commitlint": "^17.1.2",
     "husky": "^8.0.1",
     "mocha": "10.0.0",
@@ -34,19 +33,6 @@
     "standard-version": "^9.5.0",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.2"
-  },
-  "coffeelintConfig": {
-    "indentation": {
-      "level": "error",
-      "value": 2
-    },
-    "line_endings": {
-      "level": "error",
-      "value": "unix"
-    },
-    "max_line_length": {
-      "level": "ignore"
-    }
   },
   "contributors": [
     {
@@ -62,7 +48,6 @@
     "throw-deprecation": true,
     "require": [
       "should",
-      "coffeescript/register.js",
       "ts-node/register"
     ],
     "inline-diffs": true,
@@ -76,7 +61,7 @@
     "node": ">= 0.4.0"
   },
   "scripts": {
-    "build": "coffee -b -o lib src && cp src/index.d.ts lib",
+    "build": "",
     "prepare": "husky install",
     "pretest": "npm run build",
     "prerelease": "npm run build && git update-index --refresh && git diff-index --quiet HEAD --",
@@ -85,6 +70,6 @@
     "release:patch": "standard-version --release-as patch",
     "release:major": "standard-version --release-as major",
     "postrelease": "git push --follow-tags origin master",
-    "test": "mocha \"test/**/*.{coffee,ts}\""
+    "test": "mocha \"test/**/*.{js,ts}\""
   }
 }
