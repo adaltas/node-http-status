@@ -1,8 +1,17 @@
 {
-  "compileOnSave": false,
+  "include": ["./src/**/*.ts", "./test/**/*.ts"],
   "compilerOptions": {
-    "target": "es6",
-    "moduleResolution": "node",
+    /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "target": "esnext",
+    /* Specify what module code is generated. */
+    "module": "NodeNext",
+    /* Specify how TypeScript looks up a file from a given module specifier. */
+    "moduleResolution": "NodeNext",
+    /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. Do not turn it on, otherwise anyone who uses the library is forced to also turn it on. */
+    "esModuleInterop": false,
+    /* Enable all strict type-checking options. */
     "strict": true,
+    "sourceMap": true,
+    "declaration": true
   }
 }

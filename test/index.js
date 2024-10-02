@@ -1,8 +1,8 @@
-const status = require("..");
-const cloudflare = require("../lib/cloudflare");
-const iis = require("../lib/iis");
-const nginx = require("../lib/nginx");
-const unofficial = require("../lib/unofficial");
+import status from "../lib/index.js";
+import cloudflare from "../lib/cloudflare.js";
+import iis from "../lib/iis.js";
+import nginx from "../lib/nginx.js";
+import unofficial from "../lib/unofficial.js";
 
 const getDigit = (ntn, number) => {
   return Math.floor((number / Math.pow(10, ntn)) % 10);
