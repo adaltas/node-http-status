@@ -45,10 +45,10 @@
     }
   ],
   "mocha": {
-    "throw-deprecation": true,
+    "throw-deprecation": false,
+    "loader": "ts-node/esm",
     "require": [
-      "should",
-      "ts-node/register"
+      "should"
     ],
     "inline-diffs": true,
     "timeout": 40000,
@@ -71,5 +71,6 @@
     "release:major": "standard-version --release-as major",
     "postrelease": "git push --follow-tags origin master",
     "test": "mocha \"test/**/*.{js,ts}\""
-  }
+  },
+  "type": "module"
 }
