@@ -6,15 +6,19 @@ Utility to interact with HTTP status codes.
 
 ## Usage
 
-Once you require this module, you may call it with either an HTTP code or a message name. With an HTTP code, you will get the message name while with a message name you will get an HTTP code.
+Once you import or require this module, you may call it with either an HTTP code or a status name. With an HTTP code, you will get the status name while with a status name you will get an HTTP code or some complementary information.
+
+For example, `status[418]` return `IM_A_TEAPOT` while `status.IM_A_TEAPOT` return `"I'm a teapot"` and `status.IM_A_TEAPOT_CODE` returns `418`.
 
 The package is written in TypeScript and built for CommonJS and ESM.
 
-### HTTP Status codes
+## HTTP Status codes
 
-HTTP code names, messages, and classes are respectively accessible with the property `{code}_NAME`, `{code}_MESSAGE` and `{code}_CLASS`. This includes all statuses in the [IANA HTTP Status Code Registry](https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml), with the only addition being `418 I'm a teapot`.
+HTTP code names, information, and classes are respectively accessible with the property `{code}_NAME`, `{code}_MESSAGE` and `{code}_CLASS`. This includes all statuses in the [IANA HTTP Status Code Registry](https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml), with the only addition being `418 I'm a teapot`.
 
-Extra status code are also made available that are not defined in the IANA registry, but used by popular software. They are grouped by category. Specific properties are exported by `http-status` under the property `extra` followed by the category name. Also, extra codes are merge with regular status codes and made available as modules available inside `http-status/lib/{category}`.
+## Extra codes
+
+Extra status code are also made available that are not defined in the IANA registry, but used by popular softwares. They are grouped by category. Specific properties are exported by `http-status` under the property `extra` followed by the category name. Also, extra codes are merge with regular status codes and made available as modules available inside `http-status/lib/{category}`.
 
 Available categories are:
 
@@ -29,9 +33,11 @@ Available categories are:
   <dd>Cloudflare's reverse proxy service expands the 5xx error class to signal issues with the origin server.</dd>
 </dl>
 
-### HTTP Status code classes
+They are accessible throught the `status.extra[category]` property. It is also possible to import one of the category with `import status from "http-status/<category>" or `const status = require("http-status/<category>")`. In the later case, all the categories properties are merge with the common HTTP statuses.
 
-In addition to HTTP status codes, this module also contains status code classes under the `classes` property. Similar to HTTP codes, you can access class names and messages with the property `{class}_NAME` and `{class}_MESSAGE`
+## HTTP Status code classes
+
+In addition to HTTP status codes, this module also contains status code classes under the `classes` property. Similar to HTTP codes, you can access class names and messages with the property `{class}_NAME` and `{class}_MESSAGE`.
 
 ## API
 
@@ -95,7 +101,7 @@ For additional information, please refer to [original code](./src/index.litcoffe
 ### Example usage
 
 ```javascript
-const status = require("http-status");
+import status from "http-status";
 
 console.info(status.INTERNAL_SERVER_ERROR);
 // Output: 500
@@ -120,7 +126,7 @@ console.info(status[`${status.INTERNAL_SERVER_ERROR}_CLASS`]);
 ### Example using `classes`
 
 ```javascript
-const status = require("http-status");
+import status from "http-status";
 
 const responseCode = status.INTERNAL_SERVER_ERROR;
 
@@ -151,10 +157,11 @@ switch (status[`${responseCode}_CLASS`]) {
 
 ```javascript
 // Accessing property from the NGINX category
-const status = require("http-status");
+import status from "http-status";
 console.info(status.extra.nginx.NO_RESPONSE);
+
 // Accessing default HTTP status merged with NGINX status
-const status = require("http-status/lib/nginx");
+import status from "http-status/lib/nginx";
 console.info(status.IM_A_TEAPOT);
 console.info(status.NO_RESPONSE);
 ```
@@ -162,9 +169,10 @@ console.info(status.NO_RESPONSE);
 ### Example integrating Express
 
 ```javascript
-const express = require("express"),
-  redis = require("redis"),
-  status = require("http-status");
+import express from "express";
+import redis from "redis";
+import status from "http-status";
+
 // New Express HTTP server
 const app = express.createServer();
 // Regster a route
@@ -189,7 +197,7 @@ app.listen(3000);
 - Paul Vollmer: <paul.vollmer@fh-potsdam.de>
 - James Barcellano: <https://github.com/ckeboss>
 
-This package is developed by [Adaltas](https://www.adaltas.com).
+The project is sponsored by [Adaltas](https://www.adaltas.com) based in Paris, France. Adaltas offers support and consulting on distributed systems, big data and open source.
 
 ## Developers
 
