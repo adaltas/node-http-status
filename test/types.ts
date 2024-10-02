@@ -1,5 +1,5 @@
 import "should";
-import status from "../lib/index.js";
+import status from "../src/index.js";
 
 import {
   HttpStatus,
@@ -7,8 +7,8 @@ import {
   HttpStatusUnofficial,
   HttpStatusIis,
   HttpStatusNginx,
-  HttpStatusCloudfare,
-} from "../lib/index.js";
+  HttpStatusCloudflare,
+} from "../src/index.js";
 
 describe("Types", function () {
   describe("CommonJS", function () {
@@ -73,8 +73,8 @@ describe("Types", function () {
       nginx.NO_RESPONSE.should.be.a.Number();
     });
 
-    it("HttpStatusCloudfare", function () {
-      const cloudflare: HttpStatusCloudfare = status.extra.cloudflare;
+    it("HttpStatusCloudflare", function () {
+      const cloudflare: HttpStatusCloudflare = status.extra.cloudflare;
       cloudflare.UNKNOWN_ERROR.should.be.a.Number();
     });
   });

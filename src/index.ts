@@ -42,9 +42,9 @@ const classes = {
   "5xx_MESSAGE":
     "Indicates that the server is aware that it has erred or is incapable of performing the requested method.",
   SERVER_ERROR: "5xx",
-};
+} as const;
 
-export default {
+const status = {
   classes: classes,
 
   // Informational 1xx
@@ -652,7 +652,7 @@ export default {
         "Used by some HTTP proxies to signal a network read timeout behind the proxy to a client in front of the proxy.",
       "598_CLASS": classes.SERVER_ERROR,
       NETWORK_READ_TIMEOUT_ERROR: 598,
-    },
+    } as const,
 
     // Internet Information Services (IIS)
 
@@ -680,7 +680,7 @@ export default {
         "Used in Exchange ActiveSync when either a more efficient server is available or the server cannot access the users' mailbox.",
       "451_CLASS": classes.CLIENT_ERROR,
       REDIRECT: 451,
-    },
+    } as const,
 
     // NGINX
 
@@ -732,7 +732,7 @@ export default {
         "Used when the client has closed the request before the server could send a response.",
       "499_CLASS": classes.CLIENT_ERROR,
       CLIENT_CLOSED_REQUEST: 499,
-    },
+    } as const,
 
     // Cloudflare
 
@@ -800,6 +800,14 @@ export default {
         "Error 527 indicates that the request timed out or failed after the WAN connection had been established.",
       "527_CLASS": classes.SERVER_ERROR,
       RAILGUN_ERROR: 527,
-    },
-  },
-};
+    } as const,
+  } as const,
+} as const;
+
+export default status;
+export type HttpStatus = typeof status;
+export type HttpStatusClasses = typeof status.classes;
+export type HttpStatusUnofficial = typeof status.extra.unofficial;
+export type HttpStatusIis = typeof status.extra.iis;
+export type HttpStatusNginx = typeof status.extra.nginx;
+export type HttpStatusCloudflare = typeof status.extra.cloudflare;

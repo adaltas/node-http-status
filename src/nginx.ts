@@ -6,7 +6,9 @@ import status from "./index.js";
 
 export default {
   // Import default status codes.
-  ...Object.fromEntries(Object.entries(status).filter(([k]) => k !== "extra")),
+  ...(Object.fromEntries(
+    Object.entries(status).filter(([k]) => k !== "extra"),
+  ) as typeof status),
   // Merge default status codes with NGINX status codes.
   ...status.extra.nginx,
 };

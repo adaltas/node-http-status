@@ -8,6 +8,8 @@ Utility to interact with HTTP status codes.
 
 Once you require this module, you may call it with either an HTTP code or a message name. With an HTTP code, you will get the message name while with a message name you will get an HTTP code.
 
+The package is written in TypeScript and built for CommonJS and ESM.
+
 ### HTTP Status codes
 
 HTTP code names, messages, and classes are respectively accessible with the property `{code}_NAME`, `{code}_MESSAGE` and `{code}_CLASS`. This includes all statuses in the [IANA HTTP Status Code Registry](https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml), with the only addition being `418 I'm a teapot`.
@@ -93,7 +95,7 @@ For additional information, please refer to [original code](./src/index.litcoffe
 ### Example usage
 
 ```javascript
-const status = require('http-status');
+const status = require("http-status");
 
 console.info(status.INTERNAL_SERVER_ERROR);
 // Output: 500
@@ -102,15 +104,15 @@ console.info(status[500]);
 console.info(status[status.INTERNAL_SERVER_ERROR]);
 // Both output: "Internal Server Error"
 
-console.info(status['500_NAME']);
+console.info(status["500_NAME"]);
 console.info(status[`${status.INTERNAL_SERVER_ERROR}_NAME`]);
 // Both output: "INTERNAL_SERVER_ERROR"
 
-console.info(status['500_MESSAGE']);
+console.info(status["500_MESSAGE"]);
 console.info(status[`${status.INTERNAL_SERVER_ERROR}_MESSAGE`]);
 // Both output: "A generic error message, given when an unexpected condition was encountered and no more specific message is suitable."
 
-console.info(status['500_CLASS']);
+console.info(status["500_CLASS"]);
 console.info(status[`${status.INTERNAL_SERVER_ERROR}_CLASS`]);
 // Both output: "5xx"
 ```
@@ -118,7 +120,7 @@ console.info(status[`${status.INTERNAL_SERVER_ERROR}_CLASS`]);
 ### Example using `classes`
 
 ```javascript
-const status = require('http-status');
+const status = require("http-status");
 
 const responseCode = status.INTERNAL_SERVER_ERROR;
 
@@ -149,24 +151,24 @@ switch (status[`${responseCode}_CLASS`]) {
 
 ```javascript
 // Accessing property from the NGINX category
-const status = require('http-status');
-console.info(status.extra.nginx.NO_RESPONSE)
+const status = require("http-status");
+console.info(status.extra.nginx.NO_RESPONSE);
 // Accessing default HTTP status merged with NGINX status
-const status = require('http-status/lib/nginx');
+const status = require("http-status/lib/nginx");
 console.info(status.IM_A_TEAPOT);
-console.info(status.NO_RESPONSE)
+console.info(status.NO_RESPONSE);
 ```
 
 ### Example integrating Express
 
 ```javascript
-const express = require('express'),
-      redis   = require('redis'),
-      status  = require('http-status');
+const express = require("express"),
+  redis = require("redis"),
+  status = require("http-status");
 // New Express HTTP server
 const app = express.createServer();
 // Regster a route
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
   const client = redis.createClient();
   client.ping((err, msg) => {
     if (err) {
