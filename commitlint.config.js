@@ -1,8 +1,10 @@
 export default {
   extends: ["@commitlint/config-conventional"],
-  // rules: {
-  //   'scope-enum': [2, "always", [
-  //     'my_scope',
-  //   ]],
-  // }
+  rules: {
+    "type-enum": [
+      2,
+      "always",
+      ["build", "chore", "ci", "docs", "feat", "fix", "refactor", "test"],
+    ],
+  },
 };
