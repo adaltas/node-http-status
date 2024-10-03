@@ -2,13 +2,16 @@
 
 // This represent a list of codes which are not specified by any standard.
 
-import status from "./index.js";
+import { status as original } from "./index.js";
 
-export default {
+const status = {
   // Import default status codes.
   ...(Object.fromEntries(
-    Object.entries(status).filter(([k]) => k !== "extra"),
-  ) as typeof status),
+    Object.entries(original).filter(([k]) => k !== "extra"),
+  ) as typeof original),
   // Merge default status codes with unofficial status codes.
-  ...status.extra.unofficial,
+  ...original.extra.unofficial,
 };
+
+export default status;
+export { status };

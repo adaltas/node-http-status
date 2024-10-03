@@ -2,13 +2,16 @@
 
 // Cloudflare's reverse proxy service expands the 5xx error class to signal issues with the origin server.
 
-import status from "./index.js";
+import { status as original } from "./index.js";
 
-export default {
+const status = {
   // Import default status codes.
   ...(Object.fromEntries(
-    Object.entries(status).filter(([k]) => k !== "extra"),
-  ) as typeof status),
+    Object.entries(original).filter(([k]) => k !== "extra"),
+  ) as typeof original),
   // Merge default status codes with Cloudflare status codes.
-  ...status.extra.cloudflare,
+  ...original.extra.cloudflare,
 };
+
+export default status;
+export { status };
