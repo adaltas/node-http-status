@@ -805,6 +805,7 @@ const status = {
 } as const;
 
 export default status;
+export { status };
 export type HttpStatus = typeof status;
 export type HttpStatusClasses = typeof status.classes;
 export type HttpStatusUnofficial = typeof status.extra.unofficial;
