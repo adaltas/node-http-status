@@ -1,5 +1,3 @@
-[![Build Status](https://secure.travis-ci.org/adaltas/node-http-status.png)](http://travis-ci.org/adaltas/node-http-status)
-
 # HTTP Status codes for Node.js
 
 Utility to interact with HTTP status codes.
@@ -39,7 +37,7 @@ They are accessible throught the `status.extra[category]` property. It is also p
 
 In addition to HTTP status codes, this module also contains status code classes under the `classes` property. Similar to HTTP codes, you can access class names and messages with the property `{class}_NAME` and `{class}_MESSAGE`.
 
-## API
+## API organization
 
 The API is structured as follows:
 
@@ -98,7 +96,9 @@ extra.
 
 For additional information, please refer to [original code](./src/index.litcoffee).
 
-### Example usage
+## Example API usage
+
+The [api example](./samples/api.js) illustrate how to access status names by code and number and how to extra various associated informations.
 
 ```javascript
 import status from "http-status";
@@ -123,7 +123,7 @@ console.info(status[`${status.INTERNAL_SERVER_ERROR}_CLASS`]);
 // Both output: "5xx"
 ```
 
-### Example using `classes`
+## Example using `classes`
 
 ```javascript
 import status from "http-status";
@@ -153,7 +153,7 @@ switch (status[`${responseCode}_CLASS`]) {
 }
 ```
 
-### Example using the `extra` property
+## Example using the `extra` property
 
 ```javascript
 // Accessing property from the NGINX category
@@ -166,7 +166,9 @@ console.info(status.IM_A_TEAPOT);
 console.info(status.NO_RESPONSE);
 ```
 
-### Example integrating Express
+## Example integrating Express
+
+The [express example](./samples/express.js) integrate the library with a real wold usage.
 
 ```javascript
 import express from "express";
