@@ -1,10 +1,12 @@
-const express = require('express'),
-      redis   = require('redis'),
-      status  = require('..');
+// node samples/express.js
+import express from "express";
+import redis from "redis";
+import status from "http-status";
+
 // New Express HTTP server
 const app = express.createServer();
-// Regster a route
-app.get('/', (req, res) => {
+// Register a route
+app.get("/", (req, res) => {
   const client = redis.createClient();
   client.ping((err, msg) => {
     if (err) {
