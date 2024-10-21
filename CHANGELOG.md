@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.1](https://github.com/adaltas/node-http-status/compare/v1.7.4...v1.8.0) (2024-10-21)
+
+* Revert changes introduced by 1.8.0
+
 ### [1.7.4](https://github.com/adaltas/node-http-status/compare/v1.7.3...v1.7.4) (2024-02-23)
 
 
