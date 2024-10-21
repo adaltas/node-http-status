@@ -2,6 +2,26 @@
 
 Utility to interact with HTTP status codes.
 
+## Migration to v2.x
+
+Version 2 is a migration of the library to ESM modules and TypeScript. The API remains the same. The build system generates both ESM and CommonJS exports.
+
+For ESM users, the import remains the same.
+
+```js
+import status from "http-status";
+// Or
+import { status } from "http-status";
+```
+
+For CommonJs users, update the `require` statement.
+
+```js
+const { status } = require("http-status");
+// Or
+const { default: status } = require("http-status");
+```
+
 ## Usage
 
 Once you import or require this module, you may call it with either an HTTP code or a status name. With an HTTP code, you will get the status name while with a status name you will get an HTTP code or some complementary information.
