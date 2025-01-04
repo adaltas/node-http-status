@@ -225,8 +225,8 @@ The project is sponsored by [Adaltas](https://www.adaltas.com) based in Paris, F
 
 To automatically generate a new version:
 
-```
-yarn run release
+```bash
+npm run release
 ```
 
 Package publication is handled by the CI/CD with GitHub action.
