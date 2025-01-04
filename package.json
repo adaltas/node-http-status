@@ -55,6 +55,7 @@
       "email": "daniel@gasienica.ch"
     }
   ],
+  "main": "./dist/index.js",
   "exports": {
     ".": {
       "import": "./dist/index.js",
