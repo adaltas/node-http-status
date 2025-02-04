@@ -26,7 +26,12 @@ const { default: status } = require("http-status");
 
 Once you import or require this module, you may call it with either an HTTP code or a status name. With an HTTP code, you will get the status name while with a status name you will get an HTTP code or some complementary information.
 
-For example, `status[418]` return `IM_A_TEAPOT` while `status.IM_A_TEAPOT` return `"I'm a teapot"` and `status.IM_A_TEAPOT_CODE` returns `418`.
+For example, the following will return \
+`status[418]` --> `"I'm a teapot"` \
+`status["418_NAME"]` --> `"IM_A_TEAPOT"` \
+`status["418_MESSAGE"]` --> `"Any attempt to brew coffee with a teapot should result in the error code "418 I'm a teapot". The resulting entity body MAY be short and stout."` . \
+`status["418_CLASS"]` --> `"4xx"` \
+`status.IM_A_TEAPOT` --> `418`
 
 The package is written in TypeScript and built for CommonJS and ESM.
 
