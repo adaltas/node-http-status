@@ -119,7 +119,7 @@ extra.
 │   ├── …
 ```
 
-For additional information, please refer to [original code](./src/index.litcoffee).
+For additional information, please refer to [original code](./src/index.ts).
 
 ## Example API usage
 
